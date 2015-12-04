@@ -44,14 +44,60 @@
 
 <div class="container">
 
+  <!--<div class = "contactbar">-->
+    <!--<ul id = "logos">-->
+      <!--<li>-->
+        <!--<a href="mailto: stephaniendykes@gmail.com"><img src= "images/other/logo_email.png"/></a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a href="https://www.facebook.com/AlbinoOcelot"><img src= "images/other/logo_fb.png"/></a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a href="https://twitter.com/AlbinoOcelot"><img src= "images/other/logo_twitter.png"/></a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a href="https://www.linkedin.com/in/stephaniendykes"><img src= "images/other/logo_linkedin.png"/></a>-->
+      <!--</li>-->
+      <!--<li>-->
+        <!--<a href="https://github.com/sdykes3"><img src= "images/other/logo_github.png"/></a>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+
   <div class="col-sm-5 left">
     <p>
-      This is the about view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
+      My name is Stephanie, and I'm a fourth year Computational Media student at Georgia Institute of Technology.
+      My specialties encompass a combination of computer programming and interaction design.
+      <br><br>
+      Creativity is my passion. I love making things. Art and illustration are among my hobbies, and I strive to
+      always bring good design into anything that I work on.
+      <br><br>
+      Interested in knowing more? Feel free to contact me!
+      <br><br>
     </p>
+
+    <form name="htmlform" action="/cgi-bin/mailform?sdykes3@gatech.edu" method="post">
+      <input type=hidden name="mform-email" value="sdykes3@gatech.edu">
+      <input type=hidden name="mform-subject" value="Website Contact Form">
+      <input type=hidden name="mform-encoding" value="text">
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="name" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit">Send your message</button>
+      </div>
+    </form>
   </div>
 
 </div>

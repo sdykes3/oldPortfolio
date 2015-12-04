@@ -84,6 +84,89 @@ body {
     /* box height, if pic is tall enough to fill */
     overflow: hidden; }
 
+.contactbar {
+  min-width: 640px;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#logos {
+  text-align: center;
+  list-style-type: none;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  padding-top: 8px; }
+
+#logos li {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  line-height: 40px; }
+
+#logos li a {
+  display: block;
+  padding: 0 35px;
+  color: #FFFFFF;
+  text-decoration: none; }
+
+form {
+  width: 400px;
+  padding: 1em; }
+
+form div + div {
+  margin-top: 1em; }
+
+label {
+  display: inline-block;
+  text-align: right; }
+
+input {
+  font: 1em sans-serif;
+  margin-left: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  color: black !important; }
+
+#name {
+  margin-left: 30px;
+  width: 275px; }
+
+#email {
+  margin-left: 25px;
+  width: 275px; }
+
+#message {
+  margin-left: 5px; }
+
+textarea {
+  font: 1em sans-serif;
+  font-size: 14px;
+  width: 275px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  color: black !important; }
+
+input:focus, textarea:focus {
+  border-color: #000; }
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  /* To allow users to resize any textarea vertically
+     It does not work on every browser */
+  resize: vertical; }
+
+.button {
+  padding-left: 75px;
+  /* same size as the label elements */
+  margin-left: .5em;
+  color: black;
+  font-weight: normal; }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
