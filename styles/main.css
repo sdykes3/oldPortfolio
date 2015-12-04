@@ -1,0 +1,240 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+body {
+  padding: 0;
+  background: grey;
+  color: #fff; }
+
+/* Set background image for home page only */
+.home-bg {
+  background-image: url(../images/blurred_dots.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* Everything gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.header {
+  margin-bottom: 10px; }
+  .header .navbar {
+    background-color: black; }
+    .header .navbar .navbar-brand {
+      color: white; }
+    .header .navbar .nav a {
+      padding: 0px;
+      margin: 15px;
+      color: white; }
+      .header .navbar .nav a:hover {
+        color: grey; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+
+.container .filter li {
+  display: inline-block;
+  padding-right: 30px; }
+  .container .filter li a {
+    color: white; }
+.container .left {
+  padding-left: 0; }
+  .container .left .itemTitle {
+    padding-bottom: 20px; }
+  .container .left .description {
+    padding-right: 5px; }
+.container .right {
+  padding-right: 0; }
+  .container .right .buttons {
+    text-align: center;
+    padding: 10px 0 15px 0; }
+    .container .right .buttons button {
+      font-size: 16px;
+      margin: 0 10px 0 10px; }
+  .container .right .pictures .thumb {
+    width: 29%;
+    /* box width */
+    float: left;
+    margin: 2%;
+    height: 0;
+    padding-bottom: 29%;
+    /* box height, if pic is tall enough to fill */
+    overflow: hidden; }
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px; }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px; } }
+/* GRID */
+.section {
+  width: 210px;
+  height: 210px;
+  overflow: hidden;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 3%;
+  margin-bottom: 3%; }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+.span_1_of_4 {
+  width: 23.7%; }
+
+.col {
+  display: inline;
+  margin: 1% 1.2% 1% 0;
+  height: 0;
+  overflow: hidden; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/* Makes image resize when page does */
+.item_img {
+  max-width: 100%;
+  height: auto; }
+
+.item_descr {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; }
+
+.item_descr h1 {
+  color: #ffffff;
+  font-size: 34px;
+  font-family: "Droid Sans", cursive;
+  font-weight: 300;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.item_descr h2 {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Droid Sans", cursive;
+  font-weight: 300;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* 102% before IE/Firefox fix */
+.col:hover .item_descr {
+  bottom: 210px; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; } }
+@media only screen and (max-width: 480px) {
+  .span_1_of_4 {
+    width: 100%; } }
+/* ISOTOPE */
+body {
+  font-family: Arial; }
+
+.portfolioFilter a {
+  margin-right: 10px;
+  color: #666;
+  text-decoration: none; }
+
+.portfolioFilter a.current {
+  font-weight: bold; }
+
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity; }
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s; }
+
+/*# sourceMappingURL=main.css.map */
