@@ -106,6 +106,11 @@ body {
       button {
         font-size: 16px;
         margin: 0 10px 0 10px;
+        background-color: #394659;
+        border: none;
+        &:hover {
+          background-color: #455568;
+        }
       }
     }
 
@@ -121,25 +126,24 @@ body {
     }
 
   }
-
-
 }
 
-.contactbar {
-  min-width: 640px;
-  max-width: 840px;
-  margin-left: auto;
-  margin-right: auto;
+.aboutPara {
+  margin-top: 40px;
+  padding-left: 30px;
 }
-#logos { text-align: center; list-style-type: none; height: 50px; padding: 0; margin: 0;
-  background-position: center; padding-top: 8px;
+
+.aboutPic {
+  width: 75%;
+  margin-left: 20%;
+  max-height: 600px;
+  max-width: 400px;
 }
-#logos li { position: relative; display: inline-block; padding: 0; line-height: 40px; }
-#logos li a { display: block; padding: 0 35px; color: #FFFFFF; text-decoration: none; }
 
 form {
   width: 400px;
   padding: 1em;
+  padding-left: 30px;
 }
 form div + div {
   margin-top: 1em;
@@ -191,15 +195,25 @@ textarea {
   resize: vertical;
 }
 
-.button {
+.formButton {
   padding-left: 75px; /* same size as the label elements */
   margin-left: .5em;
   color: black;
   font-weight: normal;
 }
-button {
 
+.contactbar {
+  min-width: 640px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
+#logos { text-align: center; list-style-type: none; height: 50px; padding: 0; margin: 0;
+  background-position: center; padding-top: 8px;
+}
+#logos li { position: relative; display: inline-block; padding: 0; line-height: 40px; }
+#logos li a { display: block; padding: 0 35px; color: #FFFFFF; text-decoration: none; }
+
 
 
 

@@ -73,7 +73,11 @@ body {
     padding: 10px 0 15px 0; }
     .container .right .buttons button {
       font-size: 16px;
-      margin: 0 10px 0 10px; }
+      margin: 0 10px 0 10px;
+      background-color: #394659;
+      border: none; }
+      .container .right .buttons button:hover {
+        background-color: #455568; }
   .container .right .pictures .thumb {
     width: 29%;
     /* box width */
@@ -84,36 +88,20 @@ body {
     /* box height, if pic is tall enough to fill */
     overflow: hidden; }
 
-.contactbar {
-  min-width: 640px;
-  max-width: 840px;
-  margin-left: auto;
-  margin-right: auto; }
+.aboutPara {
+  margin-top: 40px;
+  padding-left: 30px; }
 
-#logos {
-  text-align: center;
-  list-style-type: none;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  background-position: center;
-  padding-top: 8px; }
-
-#logos li {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  line-height: 40px; }
-
-#logos li a {
-  display: block;
-  padding: 0 35px;
-  color: #FFFFFF;
-  text-decoration: none; }
+.aboutPic {
+  width: 75%;
+  margin-left: 20%;
+  max-height: 600px;
+  max-width: 400px; }
 
 form {
   width: 400px;
-  padding: 1em; }
+  padding: 1em;
+  padding-left: 30px; }
 
 form div + div {
   margin-top: 1em; }
@@ -160,12 +148,39 @@ textarea {
      It does not work on every browser */
   resize: vertical; }
 
-.button {
+.formButton {
   padding-left: 75px;
   /* same size as the label elements */
   margin-left: .5em;
   color: black;
   font-weight: normal; }
+
+.contactbar {
+  min-width: 640px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#logos {
+  text-align: center;
+  list-style-type: none;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  padding-top: 8px; }
+
+#logos li {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  line-height: 40px; }
+
+#logos li a {
+  display: block;
+  padding: 0 35px;
+  color: #FFFFFF;
+  text-decoration: none; }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
