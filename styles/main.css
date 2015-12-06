@@ -12,6 +12,10 @@ body {
   background: #5B626D !important;
   color: #fff !important;
   font-size: 15px; }
+  body a {
+    color: #394659; }
+    body a:hover {
+      color: #8D9091; }
 
 /* Set background image for home page only */
 .home-bg {
@@ -37,7 +41,8 @@ body {
 .header {
   margin-bottom: 10px; }
   .header .navbar {
-    background-color: #394659; }
+    background-color: #394659;
+    border: none; }
     .header .navbar .navbar-brand {
       color: white;
       height: 55px;
@@ -50,7 +55,7 @@ body {
       font-size: 15px;
       line-height: 22px; }
       .header .navbar .nav a:hover {
-        color: grey; }
+        color: #8D9091; }
 
 .container-narrow > hr {
   margin: 30px 0; }

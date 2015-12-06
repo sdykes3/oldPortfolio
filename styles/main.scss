@@ -12,6 +12,12 @@ body {
   background: #5B626D !important;
   color: #fff !important;
   font-size: 15px;
+  a {
+    color: #394659;
+    &:hover {
+      color: #8D9091;
+    }
+  }
 }
 
 /* Set background image for home page only */
@@ -45,6 +51,7 @@ body {
 
   .navbar {
     background-color: #394659;
+    border: none;
 
     .navbar-brand {
       color: white;
@@ -60,7 +67,7 @@ body {
       font-size: 15px;
       line-height: 22px;
       &:hover {
-        color: grey;
+        color: #8D9091;
       }
     }
   }
