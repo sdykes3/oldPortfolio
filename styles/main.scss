@@ -10,8 +10,8 @@
 
 body {
   padding: 0;
-  background: #5B626D !important;
-  color: #fff !important;
+  background: #5B626D;
+  color: #fff;
   font-size: 15px;
   a {
     color: #394659;
@@ -23,27 +23,27 @@ body {
 
 /* Set background image for home page only */
 .home-bg {
-  background-image: url(../images/bg_mid.png)  !important;
+  background-image: url(../images/bg_mid.png);
   background-repeat: no-repeat;
   background-attachment: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover !important;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1180px){
   .home-bg {
     /* smaller bg for mobile loading */
-    background-image: url(../images/bg_mid.png)  !important;
-    background-size: auto !important;
+    background-image: url(../images/bg_mid.png);
+    background-size: auto;
   }
 }
 
 @media screen and (max-width: 640px){
   .home-bg {
     /* smaller bg for mobile loading */
-    background-image: url(../images/bg_mobile.png)  !important;
+    background-image: url(../images/bg_mobile.png);
   }
 }
 
@@ -193,21 +193,20 @@ input {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #999;
-  color: black !important;
+  color: black;
 }
 
 #name {
-  margin-left: 30px;
-  width: 279px;
+  margin-left: 22px;
+  width: 280px;
 }
 
 #email {
-  margin-left: 25px;
+  margin-left: 18px;
   width: 280px;
 }
 
 #message {
-  margin-left: 7px;
   width: 280px;
 }
 
@@ -218,7 +217,7 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #999;
-  color: black !important;
+  color: black;
 }
 input:focus, textarea:focus {
   border-color: #000;
