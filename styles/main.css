@@ -35,17 +35,17 @@ body {
     background-image: url(../images/bg_mobile.png); } }
 .home_header1 {
   text-align: center;
-  font-size: 8.7em;
+  font-size: 10.5em;
   margin-top: 10%; }
 
 .home_header2 {
   text-align: center;
-  font-size: 7em;
-  margin-top: -4%; }
+  font-size: 6em;
+  margin-top: -4.5%; }
 
 .home_header3 {
   text-align: center;
-  font-size: 7.3em;
+  font-size: 5.8em;
   margin-top: -3%; }
 
 /* Everything gets side spacing for mobile first views */
