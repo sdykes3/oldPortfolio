@@ -10,9 +10,9 @@ body {
   color: #fff;
   font-size: 15px; }
   body a {
-    color: #394659; }
+    color: #8D9091; }
     body a:hover {
-      color: #8D9091; }
+      color: #394659; }
 
 /* Set background image for home page only */
 .home-bg {
@@ -171,7 +171,7 @@ textarea {
   resize: vertical; }
 
 .formButton {
-  padding-left: 75px;
+  padding-left: 65px;
   /* same size as the label elements */
   margin-left: .5em;
   color: black;
