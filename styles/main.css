@@ -188,7 +188,7 @@ textarea {
   list-style-type: none;
   height: 50px;
   padding: 0;
-  margin: 0;
+  margin: 50px 0 0 0;
   background-position: center;
   padding-top: 8px; }
 
@@ -203,6 +203,9 @@ textarea {
   padding: 0 35px;
   color: #FFFFFF;
   text-decoration: none; }
+
+#logos li img {
+  max-width: 35px; }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
