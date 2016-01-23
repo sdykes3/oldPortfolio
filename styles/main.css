@@ -278,18 +278,18 @@ textarea {
 .item_descr h1 {
   text-decoration: none;
   color: #ffffff;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 30px;
   padding-left: 10px;
   padding-right: 10px; }
 
 .item_descr h2 {
   text-decoration: none;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 25px;
   padding-left: 10px;
   padding-right: 10px; }
 
