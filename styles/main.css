@@ -10,9 +10,9 @@ body {
   color: #fff;
   font-size: 15px; }
   body a {
-    color: #8D9091; }
+    color: #394659; }
     body a:hover {
-      color: #394659; }
+      color: #8D9091; }
 
 /* Set background image for home page only */
 .home-bg {
@@ -46,7 +46,7 @@ body {
 .home_header3 {
   text-align: center;
   font-size: 5.8em;
-  margin-top: -2.5%; }
+  margin-top: -3%; }
 
 /* Everything gets side spacing for mobile first views */
 .header,
@@ -88,6 +88,8 @@ body {
     padding-bottom: 20px; }
   .container .left .description {
     padding-right: 5px; }
+    .container .left .description h4 {
+      font-size: 20px; }
 .container .right {
   padding-right: 0; }
   .container .right .buttons {
@@ -171,15 +173,15 @@ textarea {
   resize: vertical; }
 
 .formButton {
-  padding-left: 65px;
+  padding-left: 75px;
   /* same size as the label elements */
   margin-left: .5em;
   color: black;
   font-weight: normal; }
 
 .contactbar {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 640px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -188,7 +190,7 @@ textarea {
   list-style-type: none;
   height: 50px;
   padding: 0;
-  margin: 0 0 0 0;
+  margin: 0;
   background-position: center;
   padding-top: 8px; }
 
@@ -203,9 +205,6 @@ textarea {
   padding: 0 35px;
   color: #FFFFFF;
   text-decoration: none; }
-
-#logos li img {
-  max-width: 35px; }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -259,7 +258,7 @@ textarea {
 .item_img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px; }
+  border-radius: 5px; }
 
 .item {
   text-decoration: none !important; }
@@ -281,18 +280,18 @@ textarea {
 .item_descr h1 {
   text-decoration: none;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 40px;
   padding-left: 10px;
   padding-right: 10px; }
 
 .item_descr h2 {
   text-decoration: none;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 40px;
   padding-left: 10px;
   padding-right: 10px; }
 
@@ -380,5 +379,119 @@ textarea {
   -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   transition-duration: 0s; }
+
+/* SLIDESHOW */
+.tooltip {
+  background: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  bottom: 30px;
+  left: -300px;
+  transition: all 0.3s ease-in-out; }
+
+.tooltip h1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 50px;
+  padding: 0 0 0 10px; }
+
+.tooltip h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 0 0 0 10px; }
+
+.rslides:hover .tooltip {
+  left: 0; }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 80%;
+  /*height: 450px;*/
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+.rslides_container {
+  padding-top: 50px;
+  position: relative;
+  float: left;
+  width: 100%; }
+
+.centered-btns_nav {
+  z-index: 10;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 50%;
+  left: 5%;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../images/themes.gif") no-repeat left top;
+  margin-top: -45px; }
+
+.centered-btns_nav:active {
+  opacity: 1.0; }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 5%; }
+
+.centered-btns_nav:focus {
+  outline: none; }
+
+.centered-btns_tabs {
+  margin-top: 10px;
+  text-align: center; }
+
+.centered-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px; }
+
+.centered-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  width: 9px;
+  height: 9px; }
+
+.centered-btns_here a {
+  background: #222;
+  background: rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=main.css.map */
