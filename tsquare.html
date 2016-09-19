@@ -17,6 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles/main.css">
+  <script src="responsiveslides.min.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -151,6 +152,50 @@
           <img class= "item_img" src= "images/tsquare/thumb_04.png"/>
         </div>
       </a>
+
+    </div>
+  </div>
+
+  <div class="col-sm-12 left">
+    <h3 class="itemTitle">Process</h3>
+    <div class="rslides_container">
+            <ul class="rslides" id="slider1">
+                    <li id="first">
+                            <a href="tsquare.html"> <img src="images/tsquare/slide.png" /> </a>
+                            <div class="tooltip"> <h1>T-Square</h1> <h2>Mobile app design</h2> </div>
+                    </li>
+                    <li id="second">
+                            <a href="tsquare.html"> <img src="images/tsquare/icon.png" /> </a>
+                            <div class="tooltip"> <h1>T-Square</h1> <h2>Mobile app design</h2> </div>
+                    </li>
+            </ul>
+    </div>
+    <script>
+        $(function () {
+          // Slideshow Settings
+          $(".rslides").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: true,
+            speed: 500,
+            timeout: 4000,
+            pause: false,           // Boolean: Pause on hover
+            pauseControls: true,    // Boolean: Pause when hovering controls
+            maxwidth: 800,
+            namespace: "centered-btns"
+          });
+        });
+    </script>
+    <div class="description">
+      This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and
+      submit homework assignments, check grades, see recent announcements, find lecture materials, and more.
+      </br></br>
+      My design process for this project began with writing out design goals and what I would like to improve from
+      the regular T-Square site. Next, I sketched various layout ideas and made note of ideal interactions where
+      applicable. I conducted a survey about common usage of T-Square in order to decide on general layout and
+      hierarchy of some elements. From there, I created low fidelity wireframes and a map using Balsamiq, and then
+      high fidelity whiteframes in Illustrator. The final colored mockups were also created using Illustrator.
+      </br></br>
 
     </div>
   </div>
