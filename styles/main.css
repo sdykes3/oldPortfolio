@@ -24,29 +24,78 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
+
+/* Defaults and media conditions for home screen text */
+.home_header1 {
+  text-align: center;
+  font-size: 10.5em;
+  margin-top: 10%;
+}
+.home_header2 {
+  text-align: center;
+  font-size: 6em;
+  margin-top: -4.5%;
+}
+.home_header3 {
+  text-align: center;
+  font-size: 5.8em;
+  margin-top: -2.5%;
+}
 @media screen and (max-width: 1180px) {
   .home-bg {
     /* smaller bg for mobile loading */
     background-image: url(../images/bg_mid.png);
-    background-size: auto; } }
+    background-size: auto;
+  }
+  .home_header1 {
+    font-size: 8.5em;
+  }
+  .home_header2 {
+    font-size: 4.8em;
+  }
+  .home_header3 {
+    font-size: 4.8em;
+  }
+}
+@media screen and (max-width: 920px)  {
+  .home_header1 {
+    font-size: 7.5em;
+  }
+  .home_header2 {
+    font-size: 4em;
+  }
+  .home_header3 {
+    font-size: 4.2em;
+  }
+}
+@media screen and (max-width: 800px)  {
+  .home_header1 {
+    font-size: 5.5em;
+  }
+  .home_header2 {
+    font-size: 3em;
+  }
+  .home_header3 {
+    font-size: 3em;
+  }
+}
 @media screen and (max-width: 640px) {
   .home-bg {
     /* smaller bg for mobile loading */
-    background-image: url(../images/bg_mobile.png); } }
-.home_header1 {
-  text-align: center;
-  font-size: 10.5em;
-  margin-top: 10%; }
-
-.home_header2 {
-  text-align: center;
-  font-size: 6em;
-  margin-top: -4.5%; }
-
-.home_header3 {
-  text-align: center;
-  font-size: 5.8em;
-  margin-top: -2.5%; }
+    background-image: url(../images/bg_mobile.png);
+  }
+  .home_header1 {
+    font-size: 3.5em;
+  }
+  .home_header2 {
+    font-size: 2em;
+    margin-top: -3.5%;
+  }
+  .home_header3 {
+    font-size: 2em;
+    margin-top: -1.5%;
+  }
+}
 
 /* Everything gets side spacing for mobile first views */
 .header,
@@ -86,6 +135,7 @@ body {
   padding-left: 0; }
   .container .left .itemTitle {
     padding-bottom: 20px;
+    font-size: 20px;
     font-style: bold; }
   .container .left .description {
     padding-bottom: 10px; }
