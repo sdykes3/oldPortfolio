@@ -41,6 +41,12 @@ body {
   font-size: 5.8em;
   margin-top: -2.5%;
 }
+.home_line {
+  margin-top: -2.5%;
+  height: 100%;
+  width: 35%;
+  display: inline-block;
+}
 @media screen and (max-width: 1180px) {
   .home-bg {
     /* smaller bg for mobile loading */
@@ -78,6 +84,9 @@ body {
   .home_header3 {
     font-size: 3em;
   }
+  .home_line {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 640px) {
   .home-bg {
@@ -93,6 +102,10 @@ body {
   }
   .home_header3 {
     font-size: 2em;
+    margin-top: -1.5%;
+  }
+  .home_line {
+    width: 35%;
     margin-top: -1.5%;
   }
 }
