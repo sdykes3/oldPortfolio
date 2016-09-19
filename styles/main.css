@@ -88,14 +88,9 @@ body {
     padding-bottom: 20px;
     font-style: bold; }
   .container .left .description {
-<<<<<<< HEAD
-    padding-right: 5px;
     padding-bottom: 10px; }
-=======
-    padding-right: 5px; }
     .container .left .description h4 {
       font-size: 20px; }
->>>>>>> fab3c4494306f613f2350736aa95efcafb7e85ab
 .container .right {
   padding-right: 0; }
   .container .right .buttons {
