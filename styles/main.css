@@ -543,7 +543,8 @@ textarea {
 
 .centered-btns_tabs {
   margin-top: 10px;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0; }
 
 .centered-btns_tabs li {
   display: inline;
