@@ -117,6 +117,10 @@ body {
   padding-left: 15px;
   padding-right: 15px; }
 
+.slashes {
+  margin-top: 15px;
+}
+
 .header {
   margin-bottom: 10px; }
   .header .navbar {
@@ -139,6 +143,15 @@ body {
 .container-narrow > hr {
   margin: 30px 0; }
 
+.container .itemTitle {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-style: bold; }
+.container .description {
+  padding-bottom: 10px; }
+  .container .description h4 {
+    font-size: 18px; }
+
 .container .filter li {
   display: inline-block;
   padding-right: 30px; }
@@ -146,10 +159,6 @@ body {
     color: white; }
 .container .left {
   padding-left: 0; }
-  .container .left .itemTitle {
-    padding-bottom: 20px;
-    font-size: 20px;
-    font-style: bold; }
   .container .left .description {
     padding-bottom: 10px; }
     .container .left .description h4 {
