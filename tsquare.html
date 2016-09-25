@@ -64,6 +64,13 @@
 <div class="col-md-12">
         <h3 class="itemTitle" style="padding-bottom: 20px;">T-Square App</h3>
 
+        <div class="description"> 
+            <h4>Overview</h4>
+            This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and submit homework assignments, check grades, see recent announcements, find lecture materials, and more. However, it is slow and difficult to access on your phone, and many students complain of the very dated and unintuitive interface. 
+            </br></br>
+
+        </div>
+
         <div class="rslides_container">
             <ul class="rslides slide1" id="slider1">
                 <li id="first">
@@ -82,13 +89,15 @@
         </div>
 
         <div class="description"> 
-            <h4>Overview</h4>
-            This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and submit homework assignments, check grades, see recent announcements, find lecture materials, and more. However, it is slow and difficult to access on your phone, and many students complain of the very dated and unintuitive interface. 
-            </br></br>
-            
+
             <h4>Discovery</h4>
             My process began with discovering and collecting accounts from other students about how they interact with T-Square. I went through T-Square to explore its features, then surveyed fellow Georiga Tech students about which features they use most and where they find common pain points to be. Leveraging this, I decided that my goal should not to be cram all of T-Square, which is a large and complex application, into a single app. Instead, I chose to design for relieving the problems associated with accessing the most frequently used features on the go.
             </br></br>
+
+            <h4>Design</h4>
+            The design process began by compiling the data collected in the discovery phase. I ranked the features according what is used most often, and put them in a higher priority in my sketches. I explored desirable interactions and different layout options. After sketching and wireframing to choose the layout and heirarchy of information, I began to build a site map using Balsamiq. Next I did a greyscale mockup in Illustrator, to ensure the chosen colors have appropriately contrasting values and the design can stand on its own without relying purely on decorative effects. Finally, I applied color to the design.
+            </br></br>
+
         </div>
 
         <div class="rslides_container">
@@ -125,10 +134,6 @@
         </div>
 
         <div class="description">
-            <h4>Design</h4>
-            The design process began by compiling the data collected in the discovery phase. I ranked the features according what is used most often, and put them in a higher priority in my sketches. I explored desirable interactions and different layout options. After sketching and wireframing to choose the layout and heirarchy of information, I began to build a site map using Balsamiq. Next I did a greyscale mockup in Illustrator, to ensure the chosen colors have appropriately contrasting values and the design can stand on its own without relying purely on decorative effects. Finally, I applied color to the design.
-            </br></br>
-
             <h4>Reflection</h4>
             I feel that this was a good exercise in my design process skills, though I did not take the concept into and stage of development, primarily due to the unliklihood of Georgia Tech's cooperation. 
             
@@ -270,12 +275,12 @@
       $(function () {
         // Slideshow Settings
         $(".rslides").responsiveSlides({
-          auto: true,
+          auto: false,
           pager: true,
           nav: true,
-          speed: 500,
-          timeout: 4000,
-          pause: false,           // Boolean: Pause on hover
+          speed: 500,        // Integer: Speed of the transition, in milliseconds
+          timeout: 8000,      // Integer: Time between slide transitions, in milliseconds
+          pause: true,           // Boolean: Pause on hover
           pauseControls: true,    // Boolean: Pause when hovering controls
           maxwidth: 800,
           namespace: "centered-btns"
