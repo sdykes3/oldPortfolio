@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="js/jquery.isotope.js" type="text/javascript"></script>
+
+  <script src="lightbox/js/lightbox.min.js"></script>
+  <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
+  <!-- Bootstrap: Latest compiled and minified CSS and JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="js/responsiveslides.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56099187-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+
+<div class="header">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Stephanie Dykes</a>
+      </div>
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="portfolio.html">Portfolio</a></li>
+           <li class="slashes"> / </li>
+          <!--<li><a href="process.html">Process</a></li>-->
+          <li><a href="StephanieDykes_Resume.pdf">Resume</a></li>
+           <li class="slashes"> / </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+<div class="col-md-12">
+        <h3 class="itemTitle" style="padding-bottom: 20px;">Green Guide Copenhagen</h3>
+
+        <div class="description"> 
+            <h4>Overview</h4>
+            This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and submit homework assignments, check grades, see recent announcements, find lecture materials, and more. However, it is slow and difficult to access on your phone, and many students complain of the very dated and unintuitive interface.
+            </br></br>
+
+        </div>
+
+        <div class="rslides_container">
+            <ul class="rslides slide1" id="slider1">
+                <li id="first">
+                    <a class="item" href="images/green-guide/login.png" data-lightbox="image-1" data-title="Home page and sidebar of T-Square app. This shows the overall calendar, which has dates circled if something from any course is due. Current date is highlighted in blue, as a blue circle if something is due and as a blue number if nothing is due. Courses are color coded.">
+                        <img src="images/green-guide/slide_login.png" /> </a>
+                </li>
+                <li id="second">
+                    <a class="item" href="images/tsquare/1.png" data-lightbox="image-1" data-title="Course page and its gradebook, retaining color coding to aid in navigation. Updates are shown in a special feed, and buttons for other pages within this course are shown. In the gradebook, accordian menus are utilized to keep the structure clean.">
+                        <img src="images/tsquare/slide1.png" /> </a>
+                </li>
+                <li id="third">
+                    <a class="item" href="images/tsquare/allcolor.png" data-lightbox="image-1" data-title="Previous images shown side by side to illustrate continutity.">
+                        <img src="images/tsquare/slideAllColor.png" /> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="description"> 
+
+            <h4>Discovery</h4>
+            My process began with discovering and collecting accounts from other students about how they interact with T-Square. I went through T-Square to explore its features, then surveyed fellow Georiga Tech students about which features they use most and where they find common pain points to be. Leveraging this, I decided that my goal should not to be cram all of T-Square, which is a large and complex application, into a single app. Instead, I chose to design for relieving the problems associated with accessing the most frequently used features on the go.
+            </br></br>
+
+            <h4>Design</h4>
+            The design process began by compiling the data collected in the discovery phase. I ranked the features according what is used most often, and put them in a higher priority in my sketches. I explored desirable interactions and different layout options. After sketching and wireframing to choose the layout and heirarchy of information, I began to build a site map using Balsamiq. Next I did a greyscale mockup in Illustrator, to ensure the chosen colors have appropriately contrasting values and the design can stand on its own without relying purely on decorative effects. Finally, I applied color to the design.
+            </br></br>
+            I chose to color code classes to help keep high work loads easily distinguishable. This is a feature that I found desirable in CourseOff, a scheduling tool, and decided to extend it to here since it would also likely help with navigation. I decided to do an overall calendar on the home page rather than on indivudal course pages, so students do not have to check each course page to know if they need to do homework that night. For indivudal pages, I chose to put newly updated information at the top in a special feed, in order to distinguish it from older messages.
+            </br></br>
+
+        </div>
+
+        <div class="rslides_container">
+            <ul class="rslides slide2" id="slider1">
+                <li id="first">
+                    <a class="item" href="images/tsquare/survey.png" data-lightbox="image-1" data-title="Screenshot of part of the survey I sent out. This was used to gather data on how other students use T-Square, and got 27 total responses.">
+                        <img src="images/tsquare/slideSurvey.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/tsquare/sketch0.bmp" data-lightbox="image-1" data-title="Sketch of possible layout options, hinging on the decision of how to do sidebar navigation. I ultimately went with option 1, to keep it cleaner.">
+                        <img src="images/tsquare/slideSketch0.png" /> </a>
+                </li>
+                <li id="second">
+                    <a class="item" href="images/tsquare/sketch1.bmp" data-lightbox="image-1" data-title="Sketch of how important info would be laid out, such as course section info and TA office hours.">
+                        <img src="images/tsquare/slideSketch1.png" /> </a>
+                </li>
+                <li id="third">
+                    <a class="item" href="images/tsquare/sketch2.bmp" data-lightbox="image-1" data-title="Initial planning for overall goals, and beneath that the calendar. Exploring 2 options for how to present the calendar and how to display information within each.">
+                        <img src="images/tsquare/slideSketch2.png" /> </a>
+                </li>
+                <li id="fourth">
+                    <a class="item" href="images/tsquare/layout.png" data-lightbox="image-1" data-title="Site map and low fidelity mockups made using Balsamiq.">
+                        <img src="images/tsquare/slideLayout.png" /> </a>
+                </li>
+                <li id="fifth">
+                    <a class="item" href="images/tsquare/hiwire.png" data-lightbox="image-1" data-title="High fidelity mockups, utilizing greyscale in order to check the color values adequately indicate heirarchy of the layout. This approach was helpful in assuring that my final colorful design was not relying too much on the appeal of bright colors to drive the visual design.">
+                        <img src="images/tsquare/slideWhite.png" /> </a>
+                </li>
+                <li id="sixth">
+                    <a class="item" href="images/tsquare/tsquareOld.png" data-lightbox="image-1" data-title="Screenshot of the offical Georgia Tech version of T-Square.">
+                        <img src="images/tsquare/slideOldTsquare.png" /> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="description">
+            <h4>Reflection</h4>
+            I feel that this was a good exercise in my design process skills, though I did not take the concept into and stage of development, primarily due to the unliklihood of Georgia Tech's cooperation. 
+            
+            If I could do anything differently in hindsight, I would likely have done more research. In addition to interviewing and surveying students, asking the opinion of faculty or TAs could have provided extra insights to incorporate into the final design.
+          </br></br></br></br>
+
+        </div>
+
+    </div>
+
+
+  <!-- <div class="col-sm-6 left">
+    <h3 class="itemTitle">T-Square</h3>
+    <div class="description">
+      This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and
+      submit homework assignments, check grades, see recent announcements, find lecture materials, and more.
+      </br></br>
+      My design process for this project began with writing out design goals and what I would like to improve from
+      the regular T-Square site. Next, I sketched various layout ideas and made note of ideal interactions where
+      applicable. I conducted a survey about common usage of T-Square in order to decide on general layout and
+      hierarchy of some elements. From there, I created low fidelity wireframes and a map using Balsamiq, and then
+      high fidelity whiteframes in Illustrator. The final colored mockups were also created using Illustrator.
+      </br></br>
+      This app is based heavily on principles of material design, as it includes common components such as cards and
+      "paper" sheets upon which elements are placed. The color palette and typography are also drawn from material design.
+      </br></br>
+      Roles:
+      </br>
+      <ul>
+        <li>Idea and design</li>
+        <li>User research</li>
+        <li>Layout and wireframing</li>
+        <li>Mockups</li>
+      </ul>
+      Development:
+      </br>
+      <ul>
+        <li>Independent project</li>
+        <li>Programs: Balsamiq, Photoshop, Illustrator</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="col-sm-6 right">
+    <div class="buttons">
+      <a href="https://www.dropbox.com/sh/na3cv63bwtk2eos/AAA8LlQy7Mg67qRBnmuytSjpa?dl=0">
+        <button class="btn btn-primary btn-lg">Dropbox</button>
+      </a>
+    </div>
+
+    <div class="pictures">
+
+      <a href="images/tsquare/sketch2.bmp" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_sketch2.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/sketch0.bmp" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_sketch0.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/sketch1.bmp" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_sketch1.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/layout.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_layout.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/hiwire.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_grey.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/allcolor.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_color.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/01.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_tsquare.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/02.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_tsquare1.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/03.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_03.png"/>
+        </div>
+      </a>
+      <a href="images/tsquare/04.png" data-lightbox="image-1">
+        <div class="thumb">
+          <img class= "item_img" src= "images/tsquare/thumb_04.png"/>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="col-sm-12 left">
+    <h3 class="itemTitle">Process</h3>
+    <div class="rslides_container">
+            <ul class="rslides" id="slider1">
+                    <li id="first">
+                            <a href="tsquare.html"> <img src="images/tsquare/slide.png" /> </a>
+                            <div class="tooltip"> <h1>T-Square</h1> <h2>Mobile app design</h2> </div>
+                    </li>
+                    <li id="second">
+                            <a href="tsquare.html"> <img src="images/tsquare/icon.png" /> </a>
+                            <div class="tooltip"> <h1>T-Square</h1> <h2>Mobile app design</h2> </div>
+                    </li>
+            </ul>
+    </div>
+
+    <div class="description">
+      This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and
+      submit homework assignments, check grades, see recent announcements, find lecture materials, and more.
+      </br></br>
+      My design process for this project began with writing out design goals and what I would like to improve from
+      the regular T-Square site. Next, I sketched various layout ideas and made note of ideal interactions where
+      applicable. I conducted a survey about common usage of T-Square in order to decide on general layout and
+      hierarchy of some elements. From there, I created low fidelity wireframes and a map using Balsamiq, and then
+      high fidelity whiteframes in Illustrator. The final colored mockups were also created using Illustrator.
+      </br></br>
+
+    </div>
+  </div>
+ -->
+
+  <script>
+      $(function () {
+        // Slideshow Settings
+        $(".rslides").responsiveSlides({
+          auto: false,
+          pager: true,
+          nav: true,
+          speed: 500,        // Integer: Speed of the transition, in milliseconds
+          timeout: 8000,      // Integer: Time between slide transitions, in milliseconds
+          pause: true,           // Boolean: Pause on hover
+          pauseControls: true,    // Boolean: Pause when hovering controls
+          maxwidth: 800,
+          namespace: "centered-btns"
+        });
+      });
+  </script>
+
+</div>
+
+</body>
+</html>
