@@ -66,7 +66,7 @@
 
         <div class="description"> 
             <h4>Overview</h4>
-            This a is mobile app design for Georgia Tech's course management site. T-Square is used by students to view and submit homework assignments, check grades, see recent announcements, find lecture materials, and more. However, it is slow and difficult to access on your phone, and many students complain of the very dated and unintuitive interface.
+            This app design is part of my international coursework in Copenhagen, Denmark, for a class focusing on designing context-aware applications to help Copehnagen become the first carbon-neutral capital by 2025. This app design utilizes the Hitachi smart city sensor network, in order to gather information about the environment and adjust the app's behavior accordingly. This design project was a group effort in collboration with Kristine Carlsen and Thørbjorn Hagelskær.
             </br></br>
 
         </div>
@@ -74,16 +74,24 @@
         <div class="rslides_container">
             <ul class="rslides slide1" id="slider1">
                 <li id="first">
-                    <a class="item" href="images/green-guide/login.png" data-lightbox="image-1" data-title="Home page and sidebar of T-Square app. This shows the overall calendar, which has dates circled if something from any course is due. Current date is highlighted in blue, as a blue circle if something is due and as a blue number if nothing is due. Courses are color coded.">
-                        <img src="images/green-guide/slide_login.png" /> </a>
+                    <a class="item" href="images/green-guide/cover.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/cover.png" /> </a>
                 </li>
                 <li id="second">
-                    <a class="item" href="images/tsquare/1.png" data-lightbox="image-1" data-title="Course page and its gradebook, retaining color coding to aid in navigation. Updates are shown in a special feed, and buttons for other pages within this course are shown. In the gradebook, accordian menus are utilized to keep the structure clean.">
-                        <img src="images/tsquare/slide1.png" /> </a>
+                    <a class="item" href="images/green-guide/login.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_login.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/green-guide/slide_home.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_home.png" /> </a>
                 </li>
                 <li id="third">
-                    <a class="item" href="images/tsquare/allcolor.png" data-lightbox="image-1" data-title="Previous images shown side by side to illustrate continutity.">
-                        <img src="images/tsquare/slideAllColor.png" /> </a>
+                    <a class="item" href="images/green-guide/mypage.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_mypage.png" /> </a>
+                </li>
+                <li id="third">
+                    <a class="item" href="images/green-guide/route.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_route.png" /> </a>
                 </li>
             </ul>
         </div>
@@ -91,13 +99,17 @@
         <div class="description"> 
 
             <h4>Discovery</h4>
-            My process began with discovering and collecting accounts from other students about how they interact with T-Square. I went through T-Square to explore its features, then surveyed fellow Georiga Tech students about which features they use most and where they find common pain points to be. Leveraging this, I decided that my goal should not to be cram all of T-Square, which is a large and complex application, into a single app. Instead, I chose to design for relieving the problems associated with accessing the most frequently used features on the go.
+            The process began with brainstorming about various ways in which we could help Copenhagen become more carbon-neutral. We eventually settled on an app that would, instead of promting users to reduce their own emissions, place emphasis on rewarding those who are already taking steps. By promoting eco-friendly businesses, the app would make it a more profitable business model and stimulate conversation. It is important to note that the cultural environment of Copenhagen makes this possible, where as in other places such an app might not succeed due to differing cultural values.
+            </br></br>
+            A survey was sent to gather information about the kinds of businesses that Copenhagen residents use, know are eco-friendly, and would like to find more eco-friendly options for. We also conducted in-person interviews in the city. After analyzing the data, we began to sketch and mockup some ideas. A prototype was created from the mockups, and tested with users. Using this feedback, we iterated on the design to make it more understandable.
             </br></br>
 
             <h4>Design</h4>
-            The design process began by compiling the data collected in the discovery phase. I ranked the features according what is used most often, and put them in a higher priority in my sketches. I explored desirable interactions and different layout options. After sketching and wireframing to choose the layout and heirarchy of information, I began to build a site map using Balsamiq. Next I did a greyscale mockup in Illustrator, to ensure the chosen colors have appropriately contrasting values and the design can stand on its own without relying purely on decorative effects. Finally, I applied color to the design.
+            The app begins at the home page, where GPS data is utilized to show businesses near the user's current location. Leaves indicate how environmentally friendly the shop is, as well as a description about how they are taking steps to be green. Users may also search by category, such as shops, bars, and restuarants, and view these results on a map that is centered on their current location.
             </br></br>
-            I chose to color code classes to help keep high work loads easily distinguishable. This is a feature that I found desirable in CourseOff, a scheduling tool, and decided to extend it to here since it would also likely help with navigation. I decided to do an overall calendar on the home page rather than on indivudal course pages, so students do not have to check each course page to know if they need to do homework that night. For indivudal pages, I chose to put newly updated information at the top in a special feed, in order to distinguish it from older messages.
+            An optional in-app route planner is available. This was inspired by the thought that finding a carbon-neutral business to support is less eco-friendly overall if you travel there by car, and those who walk or ride bikes may wish to utilize the sensor data and travel via a "greener" route that has less traffic and pollution. Therefore, the route planner has an option for the Greenest route as well as the default Shortest route.
+            </br></br>
+            We also chose to include a social experience in the app, in order to increase attention for this cause and the reward patronage to environmental businesses. This is accessible by MyPage, which is a feed that indicates which of your friends have most recently checked in at stores, as well as how many times. The check in is automatic (but may be disabled in Settings), utilizing the Hitachi sensors placed in businesses and the context-aware capabilities of the app.
             </br></br>
 
         </div>
@@ -105,42 +117,38 @@
         <div class="rslides_container">
             <ul class="rslides slide2" id="slider1">
                 <li id="first">
-                    <a class="item" href="images/tsquare/survey.png" data-lightbox="image-1" data-title="Screenshot of part of the survey I sent out. This was used to gather data on how other students use T-Square, and got 27 total responses.">
-                        <img src="images/tsquare/slideSurvey.png" /> </a>
+                    <a class="item" href="images/green-guide/slide_survey0.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_survey0.png" /> </a>
                 </li>
                 <li id="first">
-                    <a class="item" href="images/tsquare/sketch0.bmp" data-lightbox="image-1" data-title="Sketch of possible layout options, hinging on the decision of how to do sidebar navigation. I ultimately went with option 1, to keep it cleaner.">
-                        <img src="images/tsquare/slideSketch0.png" /> </a>
+                    <a class="item" href="images/green-guide/slide_survey1.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_survey1.png" /> </a>
                 </li>
-                <li id="second">
-                    <a class="item" href="images/tsquare/sketch1.bmp" data-lightbox="image-1" data-title="Sketch of how important info would be laid out, such as course section info and TA office hours.">
-                        <img src="images/tsquare/slideSketch1.png" /> </a>
+                <li id="first">
+                    <a class="item" href="images/green-guide/sketch.jpg" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_sketch.png" /> </a>
                 </li>
-                <li id="third">
-                    <a class="item" href="images/tsquare/sketch2.bmp" data-lightbox="image-1" data-title="Initial planning for overall goals, and beneath that the calendar. Exploring 2 options for how to present the calendar and how to display information within each.">
-                        <img src="images/tsquare/slideSketch2.png" /> </a>
+                <li id="first">
+                    <a class="item" href="images/green-guide/slide_homeDescr.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_homeDescr.png" /> </a>
                 </li>
-                <li id="fourth">
-                    <a class="item" href="images/tsquare/layout.png" data-lightbox="image-1" data-title="Site map and low fidelity mockups made using Balsamiq.">
-                        <img src="images/tsquare/slideLayout.png" /> </a>
+                <li id="first">
+                    <a class="item" href="images/green-guide/slide_routeDescr.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_routeDescr.png" /> </a>
                 </li>
-                <li id="fifth">
-                    <a class="item" href="images/tsquare/hiwire.png" data-lightbox="image-1" data-title="High fidelity mockups, utilizing greyscale in order to check the color values adequately indicate heirarchy of the layout. This approach was helpful in assuring that my final colorful design was not relying too much on the appeal of bright colors to drive the visual design.">
-                        <img src="images/tsquare/slideWhite.png" /> </a>
+                <li id="first">
+                    <a class="item" href="images/green-guide/slide_map.png" data-lightbox="image-1" data-title="">
+                        <img src="images/green-guide/slide_map.png" /> </a>
                 </li>
-                <li id="sixth">
-                    <a class="item" href="images/tsquare/tsquareOld.png" data-lightbox="image-1" data-title="Screenshot of the offical Georgia Tech version of T-Square.">
-                        <img src="images/tsquare/slideOldTsquare.png" /> </a>
-                </li>
+
             </ul>
         </div>
 
         <div class="description">
             <h4>Reflection</h4>
-            I feel that this was a good exercise in my design process skills, though I did not take the concept into and stage of development, primarily due to the unliklihood of Georgia Tech's cooperation. 
-            
-            If I could do anything differently in hindsight, I would likely have done more research. In addition to interviewing and surveying students, asking the opinion of faculty or TAs could have provided extra insights to incorporate into the final design.
+            This was a rewarding and fun design challenge. Having the opportunity to consider the user needs of a different culture was a great experience, and designing for a cause that I care about was fantastic. This was the most in-depth data collection I had engaged in up to this point, and I found that to greatly increase my confidence in the design decisions our group made. I am very proud of the final design we came to, and would love if an app like this existed where I live now.
           </br></br></br></br>
+
 
         </div>
 
