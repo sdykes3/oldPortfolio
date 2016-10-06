@@ -509,8 +509,10 @@ textarea {
 .rslides img {
   display: block;
   height: auto;
-  float: left;
-  width: 100%;
+  /*float: left;
+  width: 100%;*/
+  margin-left: 5%;
+  width: 90% !important;
   border: 0; }
 
 .rslidesMin img {
