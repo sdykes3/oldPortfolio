@@ -66,21 +66,37 @@
 
         <div class="description"> 
             <h4>Overview</h4>
-            This app design is part of my international coursework in Copenhagen, Denmark, for a class focusing on designing context-aware applications to help Copehnagen become the first carbon-neutral capital by 2025. This app design utilizes the Hitachi smart city sensor network, in order to gather information about the environment and adjust the app's behavior accordingly. This design project was a group effort in collboration with Kristine Carlsen and Thørbjorn Hagelskær.
+            SunCalc was created a part of a group project in my graduate coursework. It was an experiment in electronic prototyping and documentation of process.
+            The documentation website can be found at <a href="http://suncalc.weebly.com/">http://suncalc.weebly.com</a>, and the DIY Instrutables guide that we created for the project can be found <a href="http://www.instructables.com/id/SunCalc-How-Much-Sunlight-Is-My-Plant-Getting-a-Su/">here.</a>
+            </br></br>
+            SunCalc is designed to tell users how much sunlight the area it is placed in recieves, measured according to the sunlight categories you see listed on seed packets (Full Sun, Partial Sun/Shade, Full Shade). This allows the user to know what kind of plants might be suitable for a particular area of their garden, or to troubleshoot why pre-existing plants might not be faring so well in a certain location. My role was predominantly helping choose electrical components, soldering the prototype, and researching about plants and sunlight levels.
+            </br></br>
+        </div>
+
+        <img src="images/suncalc/cover.png" style="margin-bottom: 20px; margin-left: 5%; width: 90%" /> </a>
+
+        <div class="description">
+
+            <h4>Discovery</h4>
+            The inspirtion for the concept came from looking at various DIY guides, as per the class instructions. We were required to iterate on existing guides, then give back to the DIY community based on our process and findings at the end. We saw many examples of water measurement tools for plants, but few of sunlight. Hence, we chose to create a sunlight calculator, with the possible stretch goal of adding water measurement capabilities.
+            </br></br>
+            We began by researching what plants need in terms of sunlight, and common ways that might be measured. We settled on the seed packet terminology as a standard and easily relevent way to measure light. Discovering that Full Sun, the highest level listed on seed packets, cooresponds to 6+ hours of direct sunlight, we decided to have a maximum of 6 lights on the device. From here, we began to sketch and model our prototype. We iterated on the sketchs and case design to adjust for which parts needed to fit inside the device, then 3D-printed the final case.
+            </br></br>
+
+            <h4>Design</h4>
+            Each light cooresponds to 1 hour of direct sunlight recieved by the UV sensor, which is situated at the top of the device. The first 2 lights represent Full Shade, ranging from 1 to 2 hours of direct sun. The second set represents Partial Sun/Shade, which is 3 to 4 hours. The final set is Full Sun, for 5 to 6 hours of sun. Anything above 6 hours is still considered Full Sun and has so special terminology, so lights were not added beyond this. However, the device does keep track of this and could be connected to Adafruit I/O in the future for long-term and full detail statistics.
+            </br></br>
+            As for the electronics, we chose a large rechargable lithium battery for long life, so the device could stay on all day. We installed a switch to the battery and put it on the front of the device, so it could be turned off. We left a hole in the side of the device for recharging the battery via micro USB, but this could also concievably be used for a wifi adapter to send the collected data to another device.
             </br></br>
 
         </div>
 
         <div class="rslides_container">
             <ul class="rslides slide1" id="slider1">
-                <li id="first">
+<!--                 <li id="first">
                     <a class="item" href="images/suncalc/cover.png" data-lightbox="image-1" data-title="">
                         <img src="images/suncalc/cover.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/cover2.png" data-lightbox="image-1" data-title="">
-                        <img src="images/suncalc/cover2.png" /> </a>
-                </li>
+                </li> -->
                 <li id="first">
                     <a class="item" href="images/suncalc/slide_sketch.png" data-lightbox="image-1" data-title="">
                         <img src="images/suncalc/slide_sketch.png" /> </a>
@@ -88,6 +104,14 @@
                 <li id="first">
                     <a class="item" href="images/suncalc/slide_mapping.png" data-lightbox="image-1" data-title="">
                         <img src="images/suncalc/slide_mapping.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/suncalc/slide_model.png" data-lightbox="image-1" data-title="">
+                        <img src="images/suncalc/slide_model.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/suncalc/slide_print.png" data-lightbox="image-1" data-title="">
+                        <img src="images/suncalc/slide_print.png" /> </a>
                 </li>
                 <li id="first">
                     <a class="item" href="images/suncalc/slide_comp.png" data-lightbox="image-1" data-title="">
@@ -98,45 +122,20 @@
                         <img src="images/suncalc/slide_comp2.png" /> </a>
                 </li>
                 <li id="first">
-                    <a class="item" href="images/suncalc/slide_model.png" data-lightbox="image-1" data-title="">
-                        <img src="images/suncalc/slide_model.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_print.png" data-lightbox="image-1" data-title="">
-                        <img src="images/suncalc/slide_print.png" /> </a>
+                    <a class="item" href="images/suncalc/cover2.png" data-lightbox="image-1" data-title="">
+                        <img src="images/suncalc/cover2.png" /> </a>
                 </li>
             </ul>
         </div>
-
-        <div class="description">
-
-            <h4>Discovery</h4>
-            The process began with brainstorming about various ways in which we could help Copenhagen become more carbon-neutral. We eventually settled on an app that would, instead of promting users to reduce their own emissions, place emphasis on rewarding those who are already taking steps. By promoting eco-friendly businesses, the app would make it a more profitable business model and stimulate conversation. It is important to note that the cultural environment of Copenhagen makes this possible, where as in other places such an app might not succeed due to differing cultural values.
-            </br></br>
-
-            <h4>Design</h4>
-            The app begins at the home page, where GPS data is utilized to show businesses near the user's current location. Leaves indicate how environmentally friendly the shop is, as well as a description about how they are taking steps to be green. Users may also search by category, such as shops, bars, and restuarants, and view these results on a map that is centered on their current location.
-            </br></br>
-
-        </div>
-
-<!--         <div class="rslides_container">
-            <ul class="rslides slide2" id="slider1">
-                <li id="first">
-                    <a class="item" href="images/green-guide/slide_survey0.png" data-lightbox="image-1" data-title="Screenshot of one of the surveys, collecting data about how people use eco-friendly services and shops, as well as general opinions informing how they might use an app that provides more information on this topic.">
-                        <img src="images/green-guide/slide_survey0.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/green-guide/slide_survey1.png" data-lightbox="image-1" data-title="These charts indicate that many people are not aware of the greenness of places they shop, but would utilize that information in a restaurant choice if it were readily available. This demonstrates a need for Green Guide.">
-                        <img src="images/green-guide/slide_survey1.png" /> </a>
-                </li>
-
-            </ul>
-        </div> -->
 
         <div class="description">
             <h4>Reflection</h4>
-            This was a rewarding and fun design challenge. Having the opportunity to consider the user needs of a different culture was a great experience, and designing for a cause that I care about was fantastic. This was the most in-depth data collection I had engaged in up to this point, and I found that to greatly increase my confidence in the design decisions our group made. I am very proud of the final design we came to, and would love if an app like this existed where I live now.
+            Given more time, there are a number of issues I would like to address. If this were to become a commercial product, the safety of the lithium battery in the sunlight all day might be a issue. Additionally, the way we installed the switch for the battery did not fully work as intended, possibly due to the Flora board protecting itself from batteries suddenly disconnecting in this way. More research into the full details of the electrical components would be a good idea. We had discussed using solar panels instead of a battery, but due to the short timescale we did not get a chance to test whether minimal levels of light could reliably power the LEDs for 24 hours.
+            </br></br>
+            As mentioned above, I also believe that connecting the device to Adafruit I/O would be a great way to improve it. Logging sunlight statistics over time would be very valuable, and ease the required attention from the user, who must check it every day with the current prototype. We reserved a port for a wifi adapter for this very reason, but ultimately had to use it recharging the lithium battery instead.
+            </br></br>
+            Overall, this was a very fun and rewarding project. I could imagine using the SunCalc myself.
+            There are many things I would like to improve, but for a short-scale project in which most group memebers were new to electrical prototyping I feel that this went very well.
           </br></br></br></br>
 
 
