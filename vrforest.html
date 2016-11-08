@@ -62,7 +62,7 @@
 <div class="container">
 
 <div class="col-sm-6 left">
-    <h3 class="itemTitle" style="padding-bottom: 20px;">VR Forest</h3>
+    <h3 class="itemTitle" style="padding-bottom: 20px;">Virtual Reality Forest</h3>
 </div>
 
 <div class="col-sm-6 right">
@@ -86,7 +86,7 @@
             <h4>Overview</h4>
             This virtual reality forest was an individual class project, inspired by speculative futures and alternate realities. I decided to create an experience in which the residents of Atlanta could go back in time and see what the area was like before modern development. It focuses mainly on education about the original vegetation and wildlife, with a real location component to see the different scenes.
             </br></br>
-            There are 2 scenes that users can find - a forest meadow and a creek. The forest meadow is located at the busy intersection of North Avenue and Techwood Drive, to constrast with the peaceful and calming forest ambience. The creek is located at the intersection of Penn and Ponce, which is the historic location of a now non-existant branch of Clear Creek.
+            There are 2 scenes that users can find - a forest meadow and a creek. The forest meadow is located at the busy intersection of North Avenue and Techwood Drive, to constrast with the peaceful and calming forest ambience. The creek is located at the intersection of Penn and Ponce, which is the historic location of a now non-existant branch of Clear Creek. The 3D tree models can be tapped for information about the forest.
             </br></br>
             The project can be found <a href="https://sdykes3.github.io/forestVR/">here.</a> 
             For users who wish to see the scenes without walking to the physical coordinates, I have created a <a href="https://sdykes3.github.io/forestVR/debug.html">debugging version</a> which allows travel via clicking on colored spheres. 
@@ -105,8 +105,41 @@
                         <img src="images/vrforest/slide_mo2.png" /> </a>
                 </li>
                 <li id="first">
-                    <a class="item" href="images/vrforest/mo2.png" data-lightbox="image-1" data-title="">
+                    <a class="item" href="images/vrforest/mo3.png" data-lightbox="image-1" data-title="">
                         <img src="images/vrforest/slide_mo3.png" /> </a>
+                </li>
+
+                <li id="first">
+                    <a class="item" href="images/vrforest/scrn1.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/scrn1.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/scrn2.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/scrn2.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/s1.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/s1.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/s2.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/s2.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/1.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/1.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/2.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/2.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/3.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/3.png" /> </a>
+                </li>
+                <li id="first">
+                    <a class="item" href="images/vrforest/4.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/4.png" /> </a>
                 </li>
             </ul>
         </div>
@@ -114,15 +147,24 @@
         <div class="description">
 
             <h4>Discovery</h4>
-            The inspirtion for the concept came from looking at various DIY guides, as per the class instructions. We were required to iterate on existing guides, then give back to the DIY community based on our process and findings at the end. We saw many examples of water measurement tools for plants, but few of sunlight. Hence, we chose to create a sunlight calculator, with the possible stretch goal of adding water measurement capabilities.
+            The inspiration for my concept came from walking around the city and imagining the peaceful ambience that must have previously existed here before. To recapture the authenticity of the original Piedmont forest, I began extensive research into the natural vegetation and geography of the region.
             </br></br>
-            We began by researching what plants need in terms of sunlight, and common ways that might be measured. We settled on the seed packet terminology as a standard and easily relevent way to measure light. Discovering that Full Sun, the highest level listed on seed packets, cooresponds to 6+ hours of direct sunlight, we decided to have a maximum of 6 lights on the device. From here, we began to sketch and model our prototype. We iterated on the sketchs and case design to adjust for which parts needed to fit inside the device, then 3D-printed the final case.
+            This research involved discovering the species of plant and wildlife here, as well as their relative populations and which modern species are actually invasive. This was accomplished through general internet research as well as investigation of the Fernbank Forest, which is a 65-acre section of original forest growth in Atlanta.
             </br></br>
 
             <h4>Design</h4>
-            Each light cooresponds to 1 hour of direct sunlight recieved by the UV sensor, which is situated at the top of the device. The first 2 lights represent Full Shade, ranging from 1 to 2 hours of direct sun. The second set represents Partial Sun/Shade, which is 3 to 4 hours. The final set is Full Sun, for 5 to 6 hours of sun. Anything above 6 hours is still considered Full Sun and has so special terminology, so lights were not added beyond this. However, the device does keep track of this and could be connected to Adafruit I/O in the future for long-term and full detail statistics.
+            Original intern of the design was to populate the location-based scenes with accurate 3D models of different tree species, as well as immersive sound and informative text about what the user is seeing. Various scenes with different content would be placed around the city, allowing users to walk to particular GPS coordinates in order to discover them. A default scene is shown when outside of these special locations, providing background and context for the experience as well as live updating feedback on your distance from each special scene.
             </br></br>
-            As for the electronics, we chose a large rechargable lithium battery for long life, so the device could stay on all day. We installed a switch to the battery and put it on the front of the device, so it could be turned off. We left a hole in the side of the device for recharging the battery via micro USB, but this could also concievably be used for a wifi adapter to send the collected data to another device.
+                        <img src="images/vrforest/unity_good.png" style="margin-bottom: 20px; margin-left: 10%; width: 80%" /> </a>
+
+                </br></br>        
+            I encountered various difficulties throughout development that limited my original vision, though I believe that the majority of the concept still came through.
+            </br></br>
+            The most notable shortcoming is likely the colorless models. I briefly achieved colored tree models by placing them with Unity and exporting the scene to A-Frame, but had to switch back to manual A-Frame models due to version constraints which would have made the informative text impossible. Thus, the final product has textureless models.
+            </br></br>
+            Additionally, due to technical and financial limitations of the free 3D models I found online, I was not able to provide accurate populations of specific tree species in the scenes. Not all models worked well with the Unity version of the project, and they worked even less with the final version. I switched to generic tree types in order to make development easier and free of cost.
+            </br></br>
+            Finally, some technical problems limit the user experience. I was unable to get directional feedback (north, south, east, west) working in the default navigation scene, which is less than ideal. Additionally, cursor feedback when hovering over the trees (to signal that they can be tapped for information) is currently not present, due to the "fuse" setting on the cursor. Turning fuse to true would result in a nice animation but no ambient sound, and vise verse, ultimately resulting in abandonment of the hover animation in favor of audio.
             </br></br>
 
         </div>
@@ -130,30 +172,32 @@
         <div class="rslides_container">
             <ul class="rslides slide1" id="slider1">
                 <li id="first">
-                    <a class="item" href="images/vrforest/unity_good.png" data-lightbox="image-1" data-title="">
-                        <img src="images/vrforest/unity_good.png" /> </a>
+                    <a class="item" href="images/vrforest/debug.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/debug.png" /> </a>
                 </li>
                 <li id="first">
-                    <a class="item" href="images/vrforest/unity_good.png" data-lightbox="image-1" data-title="">
-                        <img src="images/vrforest/unity_good.png" /> </a>
+                    <a class="item" href="images/vrforest/unity1.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/unity1.png" /> </a>
                 </li>
                 <li id="first">
-                    <a class="item" href="images/vrforest/unity_good.png" data-lightbox="image-1" data-title="">
-                        <img src="images/vrforest/unity_good.png" /> </a>
+                    <a class="item" href="images/vrforest/unity2.png" data-lightbox="image-1" data-title="">
+                        <img src="images/vrforest/unity2.png" /> </a>
                 </li>
             </ul>
         </div>
 
         <div class="description">
-            <h4>Reflection</h4>
-            Given more time, there are a number of issues I would like to address. If this were to become a commercial product, the safety of the lithium battery in the sunlight all day might be a issue. Additionally, the way we installed the switch for the battery did not fully work as intended, possibly due to the Flora board protecting itself from batteries suddenly disconnecting in this way. More research into the full details of the electrical components would be a good idea. We had discussed using solar panels instead of a battery, but due to the short timescale we did not get a chance to test whether minimal levels of light could reliably power the LEDs for 24 hours.
-            </br></br>
-            As mentioned above, I also believe that connecting the device to Adafruit I/O would be a great way to improve it. Logging sunlight statistics over time would be very valuable, and ease the required attention from the user, who must check it every day with the current prototype. We reserved a port for a wifi adapter for this very reason, but ultimately had to use it recharging the lithium battery instead.
-            </br></br>
-            Overall, this was a very fun and rewarding project. I could imagine using the SunCalc myself.
-            There are many things I would like to improve, but for a short-scale project in which most group memebers were new to electrical prototyping I feel that this went very well.
-          </br></br></br></br>
 
+
+
+
+            <h4>Reflection</h4>
+            Given more time, there are a number of issues I would like to address. I am still currently investigating how to get textured tree models into the scenes and this is probably my biggest concern right now, as it breaks immersion.
+            </br></br>
+            There are several user experience improvements that could be made as well, such as providing better instructions and giving directional feedback on the locations. Cursor feedback when hovering over trees is something I would also very much like to add, since many users will not think to tap on them and will miss the instructional text in the default scene.
+            </br></br>
+            Overall, this was a very fun project. I enjoyed the research quite a bit, and loved getting to develop a virtual reality experience. This is something that I will continue to work on, and is perhaps the first of many VR / AR / MR projects that I will work on.
+          </br></br></br></br>
 
         </div>
 
