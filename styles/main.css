@@ -157,10 +157,19 @@ body {
   padding-left: 40px;
 }
 
-.container .itemTitle {
+.container .itemTitleNoDate {
     padding-bottom: 20px;
     font-size: 20px;
     font-style: bold; }
+.container .itemTitle {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-style: bold; }
+.container .itemDate {
+    padding-bottom: 15px;
+    margin-bottom: 5px; }
+
 .container .description {
   padding-bottom: 10px; }
   .container .description h4 {
