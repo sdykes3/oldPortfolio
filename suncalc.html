@@ -67,10 +67,10 @@
 
         <div class="description"> 
             <h4>Overview</h4>
-            SunCalc was created as part of a group project in my graduate coursework, in September of 2016. It was an experiment in electronic prototyping and documentation of process.
-            The documentation website can be found at <a href="http://suncalc.weebly.com/">http://suncalc.weebly.com</a>, and the DIY Instrutables guide that we created for the project can be found <a href="http://www.instructables.com/id/SunCalc-How-Much-Sunlight-Is-My-Plant-Getting-a-Su/">here.</a>
+            SunCalc was created as part of a group project in my graduate coursework, in September of 2016. It was an experiment in hardware prototyping and documentation of process.
+            The documentation website can be found at <a href="http://suncalc.weebly.com/">http://suncalc.weebly.com</a>, and the DIY Instrutables guide that we created for the project, which also won 3rd place in the Instructables 2016 Circuits Contest, can be found <a href="http://www.instructables.com/id/SunCalc-How-Much-Sunlight-Is-My-Plant-Getting-a-Su/">here.</a>
             </br></br>
-            SunCalc is designed to tell users how much sunlight the area it is placed in recieves, measured according to the sunlight categories you see listed on seed packets (Full Sun, Partial Sun/Shade, Full Shade). This allows the user to know what kind of plants might be suitable for a particular area of their garden, or to troubleshoot why pre-existing plants might not be faring so well in a certain location. My role was predominantly helping choose electrical components, soldering the prototype, and researching about plants and sunlight levels.
+            SunCalc is designed to tell users how much sunlight the area it is placed in recieves, measured according to the sunlight categories you see listed on seed packets (Full Sun, Partial Sun/Shade, Full Shade). This allows the user to know what kind of plants might be suitable for a particular area of their garden, or to troubleshoot why pre-existing plants might not be faring so well in a certain location. My role was predominantly researching about plants and sunlight levels, helping choose electrical components, and soldering the prototype.
             </br></br>
         </div>
 
@@ -78,13 +78,13 @@
 
         <div class="description">
 
-            <h4>Discovery</h4>
+            <h4>Challenges</h4>
             The inspirtion for the concept came from looking at various DIY guides, as per the class instructions. We were required to iterate on existing guides, then give back to the DIY community based on our process and findings at the end. We saw many examples of water measurement tools for plants, but few of sunlight. Hence, we chose to create a sunlight calculator, with the possible stretch goal of adding water measurement capabilities.
             </br></br>
             We began by researching what plants need in terms of sunlight, and common ways that might be measured. We settled on the seed packet terminology as a standard and easily relevent way to measure light. Discovering that Full Sun, the highest level listed on seed packets, cooresponds to 6+ hours of direct sunlight, we decided to have a maximum of 6 lights on the device. From here, we began to sketch and model our prototype. We iterated on the sketchs and case design to adjust for which parts needed to fit inside the device, then 3D-printed the final case.
             </br></br>
 
-            <h4>Design</h4>
+            <h4>Process</h4>
             Each light cooresponds to 1 hour of direct sunlight recieved by the UV sensor, which is situated at the top of the device. The first 2 lights represent Full Shade, ranging from 1 to 2 hours of direct sun. The second set represents Partial Sun/Shade, which is 3 to 4 hours. The final set is Full Sun, for 5 to 6 hours of sun. Anything above 6 hours is still considered Full Sun and has so special terminology, so lights were not added beyond this. However, the device does keep track of this and could be connected to Adafruit I/O in the future for long-term and full detail statistics.
             </br></br>
             As for the electronics, we chose a large rechargable lithium battery for long life, so the device could stay on all day. We installed a switch to the battery and put it on the front of the device, so it could be turned off. We left a hole in the side of the device for recharging the battery via micro USB, but this could also concievably be used for a wifi adapter to send the collected data to another device.
