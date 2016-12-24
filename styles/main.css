@@ -8,9 +8,12 @@
 body {
   padding: 0;
   background: #5B626D;
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
 }
+  body h1, h2, h3, h4 {
+    color: #ffffff;
+  }
   body a {
     color: #202c3c;
   }
@@ -188,9 +191,12 @@ body {
   .container .itemDate {
     padding-bottom: 15px;
     margin-bottom: 5px;
+    font-size: 16px;
   }
 
   .container .description {
+    /* cdd3dd */
+    color: #dbe0e8;
     padding-bottom: 10px;
   }
     .container .description h4 {
