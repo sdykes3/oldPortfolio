@@ -11,8 +11,11 @@ body {
   color: #ffffff;
   font-size: 15px;
 }
-  body h1, h2, h3, h4 {
+  body h1, h2, h3, h4, h5 {
     color: #ffffff;
+  }
+  body h5 {
+    padding-top: 15px;
   }
   body a {
     color: #202c3c;
@@ -201,6 +204,10 @@ body {
   }
     .container .description h4 {
       font-size: 20px;
+    }
+
+    .container .description .pic {
+      margin-top: 20px; margin-left: 10%; width: 80%
     }
 
   .container .filter li {

@@ -65,71 +65,86 @@
         <h3 class="itemTitle">SunCalc: Light Calculator</h3>
         <p class="itemDate">September 2016</p>
 
-        <div class="description"> 
+        <div class="description">
             <h4>Overview</h4>
             SunCalc was created as part of a group project in my graduate coursework, in September of 2016. It was an experiment in hardware prototyping and documentation of process.
-            The documentation website can be found at <a href="http://suncalc.weebly.com/">http://suncalc.weebly.com</a>, and the DIY Instrutables guide that we created for the project, which also won 3rd place in the Instructables 2016 Circuits Contest, can be found <a href="http://www.instructables.com/id/SunCalc-How-Much-Sunlight-Is-My-Plant-Getting-a-Su/">here.</a>
+            The documentation website can be found at <a href="http://suncalc.weebly.com/">http://suncalc.weebly.com</a>. We also created an <a href="http://www.instructables.com/id/SunCalc-How-Much-Sunlight-Is-My-Plant-Getting-a-Su/"> Instructables guide</a>, which won 3rd place in the Instructables 2016 Circuits Contest.
             </br></br>
             SunCalc is designed to tell users how much sunlight the area it is placed in recieves, measured according to the sunlight categories you see listed on seed packets (Full Sun, Partial Sun/Shade, Full Shade). This allows the user to know what kind of plants might be suitable for a particular area of their garden, or to troubleshoot why pre-existing plants might not be faring so well in a certain location. My role was predominantly researching about plants and sunlight levels, helping choose electrical components, and soldering the prototype.
             </br></br>
         </div>
 
-        <img src="images/suncalc/cover.png" style="margin-bottom: 20px; margin-left: 5%; width: 90%" /> </a>
+        <img src="images/suncalc/cover.png" style="margin-bottom: 20px; margin-left: 5%; width: 90%" />
 
         <div class="description">
 
             <h4>Challenges</h4>
-            The inspirtion for the concept came from looking at various DIY guides, as per the class instructions. We were required to iterate on existing guides, then give back to the DIY community based on our process and findings at the end. We saw many examples of water measurement tools for plants, but few of sunlight. Hence, we chose to create a sunlight calculator, with the possible stretch goal of adding water measurement capabilities.
+            
+            <h5>DESIGNING FOR VARIOUS TYPES OF USERS AND PLANT SPECIES</h5>
+
+            The largest challenge of this project was to design a helpful gardening tool for a variety of users, designing for various skills levels and a broad spectrum of plants. We also wanted our product to be compatible with both indoor and outdoor plants. Given all of this, our product also needed to be simple and easy to decode with a single glance.
             </br></br>
-            We began by researching what plants need in terms of sunlight, and common ways that might be measured. We settled on the seed packet terminology as a standard and easily relevent way to measure light. Discovering that Full Sun, the highest level listed on seed packets, cooresponds to 6+ hours of direct sunlight, we decided to have a maximum of 6 lights on the device. From here, we began to sketch and model our prototype. We iterated on the sketchs and case design to adjust for which parts needed to fit inside the device, then 3D-printed the final case.
+            To accomodate all of these factors, we focused heavily on the way the device would represent how much light it recieves. After asking questions such as "How much light does a plant need?" and "How do sunlight needs differ among plant species?" we arrived at our solution: the sunlight metric listed on the back of seed packets. These instructions are accessible and used by all ranges of expertise, and could easily be encoded into our design.
             </br></br>
+            As a result, we mapped our 6 LEDs to an hour of sunlight each, with each set of two representing a category: Full Shade (defined as 1-2 hours of direct sunlight), Partial Sun/Shade (3-4 hour of direct sunlight), and Full Sun (5-6+ hours). Anything above 6 hours is still considered Full Sun and has no special terminology, so lights were not added beyond this.
+
+            <img class="pic" src="images/suncalc/slide_mapping.png" />
+
+
+
+            <h5>HARDWARE CHOICES</h5>
+
+            To a lesser degree, researching and choosing compatible hardware components was also a challenge. All group members were beginners with hardware prototyping, and we wanted to leave our options open to any conceptual revisions given the short timeframe of the project. We went with a Flora board due to its abundance of available pins, and ordered a very (probably overly) large battery because we did not know how much power our device would draw and therefore need to stay on for 24 hours.
+            </br></br>
+            We considered opting for a solar panel rather than battery, which is the obvious solution from a conceptual standpoint. However, with the deadline looming and shipping times to consider, we went with a safer choice due to not knowing for certain how much power a solar panel can provide or how much power our particular device requires. 
+            </br></br>
+            We also ordered a WiFi adapter (which we did not have time to implement) in case we had a chance to use Adafruit I/O to graph and keep track of sunlight measurements over time. This is something that we wanted for our product, as users would not want to have to check the SunCalc every day. However, due to time constraints (and power concerns), this was not used in the final design.
+
+            These are all issues that I would have definitely preferred to have more time to explore better solutions to.
+
+            <img class="pic" src="images/suncalc/slide_comp.png"/>
+
+
+
 
             <h4>Process</h4>
-            Each light cooresponds to 1 hour of direct sunlight recieved by the UV sensor, which is situated at the top of the device. The first 2 lights represent Full Shade, ranging from 1 to 2 hours of direct sun. The second set represents Partial Sun/Shade, which is 3 to 4 hours. The final set is Full Sun, for 5 to 6 hours of sun. Anything above 6 hours is still considered Full Sun and has so special terminology, so lights were not added beyond this. However, the device does keep track of this and could be connected to Adafruit I/O in the future for long-term and full detail statistics.
+
+            <h5>DISCOVERY</h5>
+
+            The inspiration for the concept came from looking at various existing DIY guides, as per the class instructions. We knew we wanted to focus on a gardening aid, and saw many examples of water measurement tools for plants but few for sunlight. Hence, we chose to create a sunlight calculator in order to contribute a device that has not been documented quite as much.
             </br></br>
-            As for the electronics, we chose a large rechargable lithium battery for long life, so the device could stay on all day. We installed a switch to the battery and put it on the front of the device, so it could be turned off. We left a hole in the side of the device for recharging the battery via micro USB, but this could also concievably be used for a wifi adapter to send the collected data to another device.
+            Next we began to research what plants need in terms of sunlight, and common ways that might be measured. We settled on the seed packet terminology as a standard and easily relevent way to measure light. Discovering that Full Sun, the highest level listed on seed packets, cooresponds to 6+ hours of direct sunlight, we decided to have a maximum of 6 lights on the device. 
+
+            <img class="pic" src="images/suncalc/slide_sketch.png" />
+
+            <h5>SKETCHES / MODELING</h5>
+
+            From here, we began to sketch and 3D model our prototype. We iterated on the sketches and case design to adjust for which parts needed to fit inside the device.
             </br></br>
+            Due to technical difficulty and time constraints we removed the WiFi adapter, which was originally intended to provide users with graphs and records of long-term sunlight data via Adafruit I/O. The port it was supposed to go in was repurposed for recharging the battery. Aside from the issue of connecting to WiFi, however, the device is otherwise able to store long term data, just not able to display it to the user unfortunately.
 
-        </div>
+            <img class="pic" src="images/suncalc/slide_model.png" />
 
-        <div class="rslides_container">
-            <ul class="rslides slide1" id="slider1">
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_sketch.png" data-lightbox="image-1" data-title="Initial sketches of the design and components">
-                        <img src="images/suncalc/slide_sketch.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_mapping.png" data-lightbox="image-1" data-title="Sunlight and LED mappings; each hour of light cooresponds to 1 hour of direct sunlight recieved by the UV sensor, and the nomenclature of full / partial sun and shade is based on standardized seed packet directions">
-                        <img src="images/suncalc/slide_mapping.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_model.png" data-lightbox="image-1" data-title="3D model of the device for printing">
-                        <img src="images/suncalc/slide_model.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_print.png" data-lightbox="image-1" data-title="Initial rough print with LEDs, Arduino board, and UV sensor fitted inside">
-                        <img src="images/suncalc/slide_print.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_comp.png" data-lightbox="image-1" data-title="">
-                        <img src="images/suncalc/slide_comp.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/slide_comp2.png" data-lightbox="image-1" data-title="Close up of inside components of the device, highlighting the soldering and connections">
-                        <img src="images/suncalc/slide_comp2.png" /> </a>
-                </li>
-                <li id="first">
-                    <a class="item" href="images/suncalc/cover2.png" data-lightbox="image-1" data-title="Example usage of the device outside, with all lights on. LEDs do not exactly line up on this prototype, and the colors of the 2nd and 3rd set of lights are difficult to distinguish. This, however, would be easily correctable in a further iteration of the device.">
-                        <img src="images/suncalc/cover2.png" /> </a>
-                </li>
-            </ul>
-        </div>
+<!--             </br></br>
+            We installed a switch to the battery and put it on the front of the device, so the SunCalc could be turned off. The intended use at this point would be for users to turn on the SunCalc in the morning, check the sunlight levels at the end of the day, then turn it off or recharge if needed. -->
 
-        <div class="description">
+            <h5>PROTOTYPING</h5>
+
+            We did a single test print of the case (green) prior to the final case (white). The test case came out rough, but was useful for planning the arrangement of componenents during soldering.
+            </br></br>
+            We tested and calibrated the sunlight meansurement capabilities of the UV sensor by taking it outside and keeping track of its console outputs. After calibrating it to take a UV reading every 15 minutes and determine if the sunlight levels are high enough to count that as an hour of direct light, we sealed the components in the final case.
+
+            <img class="pic" src="images/suncalc/slide_print.png" />
+
+
+            <img class="pic" src="images/suncalc/slide_comp2.png" style="margin-bottom: 10px" />
+
+
+
             <h4>Reflection</h4>
-            Given more time, there are a number of issues I would like to address. If this were to become a commercial product, the safety of the lithium battery in the sunlight all day might be a issue. Additionally, the way we installed the switch for the battery did not fully work as intended, possibly due to the Flora board protecting itself from batteries suddenly disconnecting in this way. More research into the full details of the electrical components would be a good idea. We had discussed using solar panels instead of a battery, but due to the short timescale we did not get a chance to test whether minimal levels of light could reliably power the LEDs for 24 hours.
+            Given more time, there are a number of issues I would like to address. If this were to become a commercial product, the safety of the lithium battery in the sunlight all day might be a issue. Additionally, the way we installed the switch for the battery did not fully work as intended, possibly due to the Flora board protecting itself from batteries suddenly disconnecting in this way. More research into the full details of the electrical components would be a good idea. We had discussed using solar panels instead of a battery, but due to the short timescale we did not get a chance to test whether minimal levels of light could reliably power the LEDs for 24 hours. Conceptually, however, this would be an obvious choice to explore in the future.
             </br></br>
-            As mentioned above, I also believe that connecting the device to Adafruit I/O would be a great way to improve it. Logging sunlight statistics over time would be very valuable, and ease the required attention from the user, who must check it every day with the current prototype. We reserved a port for a wifi adapter for this very reason, but ultimately had to use it recharging the lithium battery instead.
+            As mentioned above, I also believe that connecting the device to Adafruit I/O would be a great way to improve it. Logging sunlight statistics over time would be very valuable, and ease the required attention from the user, who must check it every day with the current prototype. We reserved a port for a wifi adapter for this very reason, but ultimately decided to use it for recharging the lithium battery instead.
             </br></br>
             Overall, this was a very fun and rewarding project. I could imagine using the SunCalc myself.
             There are many things I would like to improve, but for a short-scale project in which most group memebers were new to electrical prototyping I feel that this went very well.
