@@ -149,50 +149,89 @@
 
 
             <h4>Challenges</h4>
-            CHALLENGES
+
+<!--             CHALLENGES
+            SOLUTIONS - STORYTELL HOW I GOT TO THESE SOLUTIONS
 
             Making something speculative yet related to location
-              Decided on educatonal twist
+              Solution - Decided on educatonal twist
 
             Finicky VR development being difficult
               3D tree models importing without texture
               A-Frame errors on load sometimes
 
+              Solution - still ongoing, help from peers -->
 
-            SOLUTIONS - STORYTELL HOW I GOT TO THESE SOLUTIONS
-            
+
+
+            <h5>LOCATION BASED, YET SPECULATIVE</h5>
+            The concept was a bit of a challenge at first, due to the requirement of being speculative yet location-based. Being in Atlanta, I wanted a VR experience that could speculate about aspects of the urban environment and make users think. Eventually, I came to the solution of making an educational VR experience. Walking around the city, users are prompted to think about what the city would have looked like before there was a city at all, and in the process they also learn about natural vegetation for the area.
+
+            <h5>VR DEVELOPMENT</h5>
+            This was my first virtual reality development project, and I had several development difficulties. The main challenge was with the 3D models I supplemented the scenes with. Ideally, I would have liked my research to lead to a variety of authentic plant species models in the scenes, accompanied by tooltip-like information about them. This would immerse the user in a realistic forest scene.
             </br></br>
+            However, the availability of free 3D models was not enough to accomodate all of the specific vegetation I envisioned, so generics were used. Also, little to no shrubs and small plants were available, so I placed mostly trees.
+            </br></br>
+            Secondly, many of the model textures do not import correctly, depending upon the version of A-Frame I used. I ultimately sacrificed tree model textures for A-Frames ability to work with the pop-up informative text, a more valued component of the experience. This sacrifice allows the functional vision of the project to shine through, but I am still seeking a solution to the unsightly lack of texture for the models. I have still kept the models, though. This is because they are the buttons that toggle their cooresponding information visibility, allowing users to turn the text off and enjoy the forest scenery when desired.
+            </br></br>
+
+
+
+
+
 
             <h4>Process</h4>
 
-            DISCOVERY - USER CENTERED RESEARCH
-              FERNBANK FOREST
-
-            PROTOTYPING
-            USER TESTING
-              Mitch
 
 
-
-            <h4>Discovery</h4>
-            The inspiration for my concept came from walking around the city and imagining the peaceful ambience that must have previously existed here before. To recapture the authenticity of the original Piedmont forest, I began extensive research into the natural vegetation and geography of the region.
+            <h5>CONCEPT</h5>
+            The inspiration for my concept came from walking around the city and imagining the peaceful ambience that must have previously existed here before urban development. I wanted to capture the authenticity of the original Piedmont forest and allow users to be transported there.
             </br></br>
-            This research involved discovering the species of plant and wildlife here, as well as their relative populations and which modern species are actually invasive. This was accomplished through general internet research as well as investigation of the Fernbank Forest, which is a 65-acre section of original forest growth in Atlanta.
+            The original concept for the design was to populate the location-based scenes with accurate 3D models of different tree species, as well as immersive sound and educational text about what the user is seeing. Various scenes with different content would be placed around the city, allowing users to walk to particular GPS coordinates in order to discover them. A default scene is shown when outside of these special locations, providing background and context for the experience as well as live updating feedback on your distance from each special scene.
             </br></br>
 
-            <h4>Design</h4>
-            Original intern of the design was to populate the location-based scenes with accurate 3D models of different tree species, as well as immersive sound and informative text about what the user is seeing. Various scenes with different content would be placed around the city, allowing users to walk to particular GPS coordinates in order to discover them. A default scene is shown when outside of these special locations, providing background and context for the experience as well as live updating feedback on your distance from each special scene.
-            </br></br>
-                        <img src="images/vrforest/unity_good.png" style="margin-bottom: 20px; margin-left: 10%; width: 80%" /> </a>
+            <img src="images/vrforest/unity_good.png" style="margin-bottom: 20px; margin-left: 10%; width: 80%" /> </a>
 
-                </br></br>        
+            <h5>DISCOVERY</h5>
+            I began with extensive research into the natural vegetation and geography of the region. The initial research involved discovering the species of plant and wildlife in Georgia, as well as their relative populations and which modern species are actually invasive. This was accomplished through general online research as well as investigation of the Fernbank Forest, which is a local 65-acre section of original forest growth in Atlanta.
+            </br></br>
+            I used this information to inform the types of scenes I would make and to select the educational information to put in them. I also began to select which plant species I wanted to display, but did not fully pursue this due to technical difficulties with acquiring the models
+
+            <h5>DEVELOPMENT</h5>
+            This VR experience was developed using A-Frame, Javascript, and HTML. It is intended to be used in a mobile web browser, but can also be paired with VR devices such as Google Cardboard. It works with mobile version of Chrome, Firefox, and Safari, and is hosted on Github Pages currently.
+            </br></br>
+
+
+            WHAT I DID AND WHAT IT DOES
+            Tried Unity + A-Frame
+            Tried other A-Frame (no text)
+            Final A-Frame (text)
+
+
+            TECHNICAL SHORTCOMINGS?
+
+
+            Finally, some technical problems limit the user experience. I was unable to get directional feedback (north, south, east, west) working in the default navigation scene, which is less than ideal. Additionally, cursor feedback when hovering over the trees (to signal that they can be tapped for information) is currently not present, due to the "fuse" setting on the cursor. Turning fuse to true would result in a nice animation but no ambient sound, and vise verse, ultimately resulting in abandonment of the hover animation in favor of audio.
+
+
+
+
+<!--             <h5>USER TESTING</h5>
+            I tested the project with a handful of users, as well as tested it for myself during development.  -->
+
+
+
+
+   
+
+            <!-- </br></br>        
             I encountered various difficulties throughout development that limited my original vision, though I believe that the majority of the concept still came through.
             </br></br>
             The most notable shortcoming is likely the colorless models. I briefly achieved colored tree models by placing them with Unity and exporting the scene to A-Frame, but had to switch back to manual A-Frame models due to version constraints which would have made the informative text impossible. Thus, the final product has textureless models.
             </br></br>
             Additionally, due to technical and financial limitations of the free 3D models I found online, I was not able to provide accurate populations of specific tree species in the scenes. Not all models worked well with the Unity version of the project, and they worked even less with the final version. I switched to generic tree types in order to make development easier and free of cost.
-            </br></br>
-            Finally, some technical problems limit the user experience. I was unable to get directional feedback (north, south, east, west) working in the default navigation scene, which is less than ideal. Additionally, cursor feedback when hovering over the trees (to signal that they can be tapped for information) is currently not present, due to the "fuse" setting on the cursor. Turning fuse to true would result in a nice animation but no ambient sound, and vise verse, ultimately resulting in abandonment of the hover animation in favor of audio.
+            </br></br> -->
+
             </br></br>
 
         </div>
