@@ -506,6 +506,7 @@ textarea {
 }
   .portfolioFilter a {
     margin-right: 15px;
+    margin-left: -15px;
     color: #ffffff;
     font-size: 16px;
   }
@@ -524,29 +525,26 @@ textarea {
     }
 
 
-
-
-
+/* Fancy radio buttons */
 .check{
   display: inline-block;
   position: relative;
-  border: 5px solid #AAAAAA;
+  border: 3px solid #AAAAAA;
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
-  top: 5px;
+  height: 15px;
+  width: 15px;
+  top: 2px;
   left: 18px;
   z-index: 5;
-  transition: border .25s linear;
-  -webkit-transition: border .25s linear;
+  transition: border .1s linear;
+  -webkit-transition: border .1s linear;
 }
-
 
 a:hover .check {
-  border: 5px solid grey;
+  border: 3px solid grey;
 }
 a:hover .currentButton {
-  border: 5px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
 }
 
 .check::before {
@@ -554,34 +552,27 @@ a:hover .currentButton {
   position: relative;
   content: '';
   border-radius: 100%;
-  height: 9px;
-  width: 9px;
-  top: 5px;
-  left: 5px;
+  height: 14px;
+  width: 14px;
   margin: auto;
-  transition: background 0.25s linear;
-  -webkit-transition: background 0.25s linear;
+  transition: background 0.1s linear;
+  -webkit-transition: background 0.1s linear;
 }
 
 a .currentButton {
-  border: 5px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
 }
 a .currentButton:hover {
-  border: 5px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
 }
 
 a .currentButton::before{
   background: #FFFFFF;
   position: relative;
-  top: 3px;
-  left: 0px;
+  top: -2px;
+  left: -2px;
 }
-
-
-
-
-
-
+/* End fancy radio buttons */
 
 
 .isotope {
