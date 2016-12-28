@@ -58,28 +58,57 @@
   </div>
 </div>
 
-
 <div class="container">
 
   <div class="portfolioFilter">
 
-    <a href="#" data-filter="*" class="current">All</a>
-    <a href="#" data-filter=".design">Design</a>
-    <a href="#" data-filter=".code">Coding</a>
+    <!-- <a href="#" data-filter="*" class="current">All</a> -->
+    <!-- <a href="#" data-filter=".design">Design</a> -->
+    <!-- <a href="#" data-filter=".code">Coding</a> -->
 
-    <!--<form action="">-->
-      <!--<label>-->
-        <!--<a href="#" data-filter="*" class="current">-->
-          <!--<input type="radio" name="sex" value="male">All</input>-->
-        <!--</a>-->
-      <!--</label>-->
-      <!--<label href="#" data-filter=".ill" class="current">-->
-        <!--<input type="radio" name="sex" value="female">None</input>-->
-      <!--</label>-->
-      <!--<label href="#" data-filter=".code" class="current">-->
-        <!--<input type="radio" name="sex" value="zemale">Some</input>-->
-      <!--</label>-->
-    <!--</form>-->
+<!--     <a onclick="radioFilter1()" href="#" data-filter="*">
+        <input id="radioAll" type="radio" name="filter" checked="true">All</input>
+    </a>
+    <a onclick="radioFilter2()" href="#" data-filter=".design">
+      <input id="radioDesign" type="radio" name="filter">Design</input>
+    </a>
+    <a onclick="radioFilter3()" href="#" data-filter=".code">
+      <input id="radioCode" type="radio" name="filter">Coding</input>
+    </a> -->
+
+
+    <a onclick="radioFilter1()" href="#" data-filter="*">
+      <span class="check">
+          <span class="inside"></span>
+      </span>
+      <input id="radioAll" type="radio" name="filter" checked="true">All</input>
+    </a>
+    <a onclick="radioFilter2()" href="#" data-filter=".design">
+      <span class="check">
+          <span class="inside"></span>
+      </span>
+      <input id="radioDesign" type="radio" name="filter">Design</input>
+    </a>
+    <a onclick="radioFilter3()" href="#" data-filter=".code">
+      <span class="check">
+          <span class="inside"></span>
+      </span>
+      <input id="radioCode" type="radio" name="filter">Coding</input>
+    </a>
+
+
+    <script type='text/javascript'>
+      function radioFilter1() {
+        document.getElementById("radioAll").checked = true;
+      }
+      function radioFilter2() {
+        document.getElementById("radioDesign").checked = true;
+      }
+      function radioFilter3() {
+        document.getElementById("radioCode").checked = true;
+      }
+    </script>
+
 
   </div>
 
