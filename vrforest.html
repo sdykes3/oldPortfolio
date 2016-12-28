@@ -200,38 +200,15 @@
             <h5>DEVELOPMENT</h5>
             This VR experience was developed using A-Frame, Javascript, and HTML. It is intended to be used in a mobile web browser, but can also be paired with VR devices such as Google Cardboard. It works with mobile version of Chrome, Firefox, and Safari, and is hosted on Github Pages currently.
             </br></br>
-
-
-            WHAT I DID AND WHAT IT DOES
-            Tried Unity + A-Frame
-            Tried other A-Frame (no text)
-            Final A-Frame (text)
-
-
-            TECHNICAL SHORTCOMINGS?
-
-
-            Finally, some technical problems limit the user experience. I was unable to get directional feedback (north, south, east, west) working in the default navigation scene, which is less than ideal. Additionally, cursor feedback when hovering over the trees (to signal that they can be tapped for information) is currently not present, due to the "fuse" setting on the cursor. Turning fuse to true would result in a nice animation but no ambient sound, and vise verse, ultimately resulting in abandonment of the hover animation in favor of audio.
-
-
-
-
-<!--             <h5>USER TESTING</h5>
-            I tested the project with a handful of users, as well as tested it for myself during development.  -->
-
-
-
-
-   
-
-            <!-- </br></br>        
-            I encountered various difficulties throughout development that limited my original vision, though I believe that the majority of the concept still came through.
+            Three scenes exist: default context/navigation, a forest, and a creek. These are hidden and shown based on GPS information from the mobile device. When a scene is activated, ambient looping sound is triggered with Javascript. An A-Frame cursor is present, and when the user aims it at a 3D model and taps, a piece of informative text's visibility is toggled.
             </br></br>
-            The most notable shortcoming is likely the colorless models. I briefly achieved colored tree models by placing them with Unity and exporting the scene to A-Frame, but had to switch back to manual A-Frame models due to version constraints which would have made the informative text impossible. Thus, the final product has textureless models.
-            </br></br>
-            Additionally, due to technical and financial limitations of the free 3D models I found online, I was not able to provide accurate populations of specific tree species in the scenes. Not all models worked well with the Unity version of the project, and they worked even less with the final version. I switched to generic tree types in order to make development easier and free of cost.
-            </br></br> -->
+            In an earlier version, I used Unity in conjunction with A-Frame to place the models (which were able to be textured at the time). However, this older version of A-Frame was not compatibile with text, so I changed to the newer version which I believe causes the textureless model issue.
 
+
+            <h5>USER TESTING</h5>
+            I tested the project with a handful of users, as well as testing it for myself during development. Feedback was generally favorable, and I improved instruction and context for the experience based on what was said. Users generally thought that it was "very cool" and represented "something [they] had never really thought about before." Basing it in fact went over very well, and one user said she found it be "very peaceful."
+            </br></br>
+            Unfortunately, I also found that some technical problems limit the user experience. As previously mentioned, the textureless models were found to break immersion. Additionally, cursor feedback when hovering over the trees (to signal that they can be tapped for information) is currently not present, due to the "fuse" setting on the cursor. Turning fuse to true would result in a nice animation but no ambient sound, and vise verse, ultimately resulting in abandonment of the hover animation in favor of audio. However, I found that most users could have benefited from this type of cue.
             </br></br>
 
         </div>
@@ -259,11 +236,11 @@
 
 
             <h4>Reflection</h4>
-            Given more time, there are a number of issues I would like to address. I am still currently investigating how to get textured tree models into the scenes and this is probably my biggest concern right now, as it breaks immersion.
+            Given more time, I would really have liked to further address some of the technical issues. I am still currently investigating how to get textured tree models into the scenes and this is probably my biggest concern right now. This is followed by the lack of a cursor animation over models, so users can know that they should try tapping.
             </br></br>
-            There are several user experience improvements that could be made as well, such as providing better instructions and giving directional feedback on the locations. Cursor feedback when hovering over trees is something I would also very much like to add, since many users will not think to tap on them and will miss the instructional text in the default scene.
+            Providing better instructions, giving directional feedback on the locations, and possibly finding the originally intended plant species models would also be other good improvements.
             </br></br>
-            Overall, this was a very fun project. I enjoyed the research quite a bit, and loved getting to develop a virtual reality experience. This is something that I will continue to work on, and is perhaps the first of many VR / AR / MR projects that I will work on.
+            Overall, however, this was a very fun project. I enjoyed the research quite a bit, and loved getting to develop a virtual reality experience. This is something that I am very glad to have developed, and is perhaps the first of many VR / MR projects that I will work on.
           </br></br></br></br>
 
         </div>
