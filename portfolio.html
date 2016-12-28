@@ -78,19 +78,19 @@
 
 
     <a onclick="radioFilter1()" href="#" data-filter="*">
-      <span class="check">
+      <span class="check currentButton" id="radioAllButton">
           <span class="inside"></span>
       </span>
       <input id="radioAll" type="radio" name="filter" checked="true">All</input>
     </a>
     <a onclick="radioFilter2()" href="#" data-filter=".design">
-      <span class="check">
+      <span class="check" id="radioDesignButton">
           <span class="inside"></span>
       </span>
       <input id="radioDesign" type="radio" name="filter">Design</input>
     </a>
     <a onclick="radioFilter3()" href="#" data-filter=".code">
-      <span class="check">
+      <span class="check" id="radioCodeButton">
           <span class="inside"></span>
       </span>
       <input id="radioCode" type="radio" name="filter">Coding</input>
@@ -100,12 +100,21 @@
     <script type='text/javascript'>
       function radioFilter1() {
         document.getElementById("radioAll").checked = true;
+        document.getElementById("radioAllButton").className = "check currentButton";
+        document.getElementById("radioDesignButton").className = "check";
+        document.getElementById("radioCodeButton").className = "check";
       }
       function radioFilter2() {
         document.getElementById("radioDesign").checked = true;
+        document.getElementById("radioAllButton").className = "check";
+        document.getElementById("radioDesignButton").className = "check currentButton";
+        document.getElementById("radioCodeButton").className = "check";
       }
       function radioFilter3() {
         document.getElementById("radioCode").checked = true;
+        document.getElementById("radioAllButton").className = "check";
+        document.getElementById("radioDesignButton").className = "check";
+        document.getElementById("radioCodeButton").className = "check currentButton";
       }
     </script>
 
