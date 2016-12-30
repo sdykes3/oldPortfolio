@@ -63,14 +63,20 @@
 <div class="container">
 
     <div class="col-sm-6 left">
-        <h3 class="itemTitle">Patriot Bot</h3>
+        <h3 class="itemTitle">Patriot Point</h3>
         <p class="itemDate">November 2016</p>
     </div>
 
     <div class="col-sm-6 right">
         <div class="buttons">
-          <a href="https://github.com/sdykes3/portfolio">
+          <a href="https://github.com/sdykes3/citizen-bot">
             <button class="btn btn-primary btn-lg" style="float:right; margin-right: 25px">Github</button>
+          </a>
+          <a href="https://twitter.com/PatriotPointUSA">
+            <button class="btn btn-primary btn-lg" style="float:right; margin-right: 25px">Twitter Bot</button>
+          </a>
+          <a href="http://patriotbot.weebly.com/">
+            <button class="btn btn-primary btn-lg" style="float:right; margin-right: 25px">Website</button>
           </a>
         </div>
     </div>
@@ -79,203 +85,99 @@
 
         <div class="description"> 
             <h4>Overview</h4>
-            This site has undergone several iterations over the course of my education. Initially, it was merely thrown
-            together in my 2nd year as a means to show my gave development and spriting experience. It was very minimal, without
-            much visual or UX design consideration. As my knowledge and interests expanded throughout the years, and as the needs of my
-            portfolio changed, I changed the design. The site you are using now is the most recent iteration, but definitely not the last.
+            Patriot Point consists of a speculative Twitter bot and accompanying website, designed to engage Americans with issues of national surveillance and citizen scores using a social media platform. The bot scours Twitter for unpatriotic behavior and deducts Patriot Points from users, who can then visit the website in the bot's bio to learn the consequences of their score. This project was made during November 2016, as part of an individual assignment for my first semester of graduate coursework.
             </br></br>
 
         </div>
 
-        <div class="rslides_container">
-            <ul class="rslides slide1" id="slider1">
-                <li id="first">
-                    <a class="item" href="images/site/it2/index.png" data-lightbox="image-1" data-title="Landing page of current site">
-                        <img src="images/site/it2/index.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it2/item.png" data-lightbox="image-1" data-title="Mockup of layout for portfolio item details page">
-                        <img src="images/site/it2/item.png" /> </a>
-                </li>
-                <li id="third">
-                    <a class="item" href="images/site/it2/portfolio.png" data-lightbox="image-1" data-title="Mockup of portfolio page">
-                        <img src="images/site/it2/portfolio.png" /> </a>
-                </li>
-            </ul>
-        </div>
+        <img src="images/patriot/7.png" style="margin-bottom: 20px; margin-left: 5%; width: 90%" />
 
         <div class="description">
 
 
          <h4>Challenges</h4>
-            CHALLENGES
-            SOLUTIONS - STORYTELL HOW I GOT TO THESE SOLUTIONS
 
+            <h5>TWITTER CONSTRAINTS ON ORIGINAL CONCEPT</h5>
+            I faced some problems in development due to Twitter's automation guidelines. The original concept involved searching for tweets the bot would deem "inappropriate" and deducting points from the poster. This, however, is considered too invasive to random Twitter users and the application had to be revisited after being muted by moderators.
+            </br></br>
+            After feedback and a closer look at the rules, I then redesigned the bot to ask for consent. This effictively reskinned it as an opt-in program, wherein citizens are still monitored and have points deducted but can choose whether or not to have to bot let them know in real-time. To do this, I searched for "inappropriate" tweets in the same manner, but merely responded to them by asking users once if they would like to recieve notifications. The application keeps track of responses and will never tweet at a user more than once without consent. Stopping all coorespondance at any time is also an available option.
+            </br></br>
 
-            Twitter constraints on idea
-                Solution - changed to ask consent and possible opt-out
+<!--             <img class="pic" src="images/patriot/6Consent.png" style="margin-bottom: 20px; margin-left: 20%; width: 60%" /> -->
+
 
 
 
             <h4>Process</h4>
 
-
-            CONCEPT
-                Inspired by possible Chinese social scoring system
-                    Intended to show Americans how such a system may look here, and show the scary side of extreme patriotism
-
-            DEVELOPMENT
-                Twitter API, Javascript, Node.js
-
-            REFLECTION
-
-
-
-
-        </div>
-
-        <div class="rslides_container">
-            <ul class="rslides slide2" id="slider1">
-                <li id="second">
-                    <a class="item" href="images/site/it2/sketches.png" data-lightbox="image-1" data-title="Initial sketches of site ideas, on large colored sitcky notes. Here, I explored different layout options, mainly pertaining to the landing page. I sketched out a single long scrolling site versus multi-paged, as well as different nomenclature and navigation bar options.">
-                        <img src="images/site/it2/slide_sketches.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it2/tit0.png" data-lightbox="image-1" data-title="Mockup of possible continuous scrolling site. This is the landing page, but would scroll down to the portfolio and about sections, as indicated by the arrow. The top navigation could be used to jump to sections.">
-                        <img src="images/site/it2/tit0.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it2/tit2.png" data-lightbox="image-1" data-title="Mockup of possible landing page. This option most closely resembling current site, as it is the multi-paged layout option, with static navigation at the top. This landing page is primarily for a declaration of my interest areas and an appealing background for a pop of color and to set the tone.">
-                        <img src="images/site/it2/tit2.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it2/process.png" data-lightbox="image-1" data-title="Mockup of the process page, to outline my design thinking and methodologies. This is currently integrated into the item details pages, but may eventually also have a page of its own.">
-                        <img src="images/site/it2/process.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it1/portfolio.png" data-lightbox="image-1" data-title="Previous iteration of portfolio site. Outdated visual design, but a solid precursor to the current site when it comes to layout.">
-                        <img src="images/site/it1/portfolio.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it1/item.png" data-lightbox="image-1" data-title="Previous iteration of portfolio site; item details page, resembling a layout that is still used on this version of the site.">
-                        <img src="images/site/it1/item.png" /> </a>
-                </li>
-                <li id="second">
-                    <a class="item" href="images/site/it0/slide_first.png" data-lightbox="image-1" data-title="Original site. It was simplistic, un-researched, and had poor navitagion and layout of content. This was in about 2013, and I present this to demonstrate how far I have come since focusing on my design skills and dedicating myself to improvement.">
-                        <img src="images/site/it0/slide_first.png" /> </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="description">
+            <h5>CONCEPT</h5>
+            My inspiration for this project came from news articles about a potential Chinese "citizen score" system. In the proposed system, each citizen would have a score reflecting their character and tied to their national identity card. This score could change based on what say on social media, purchase history, hobbies, and even who they are friends with.
             </br></br>
-            <h4>Reflection</h4>
+            I chose to use this project to show Americans what such a system could look like if it were implented in our country. Extreme American patriotism seemed like an obvious ideology to promote in this case, and this was also a good way to show the scary side of what it can look like (as speculative media often does.) I envisioned a system in which the US government would monitor citizens via social media, among other outlets, and score them based on their activity. Speaking out against the government, or having friends who do so, would result in lower scores, while proclaiming loyalty would be rewarded. Certain benefits or losses of privilege would also exist based on a citizen's score, which could be found on an accompanying informative website modeled after existing modern government sites.
+            </br></br>
+            My Twitter bot would narratively be just one of many automatic processes monitoring citizen activity. I chose Twitter because it is a very political platform where people already openly speak their minds, and the use of hashtags lends itself to many easy coding solution.
+
+<!--             <img src="images/patriot/attention.png" style="margin-bottom: 20px; margin-left: 20%; width: 60%" /> -->
+
+            </div>
+
+            <div class="rslides_container" style="padding-top: 0; padding-bottom: 10px">
+                <ul class="rslides slide1" id="slider1">
+                    <li id="first">
+                        <a class="item" href="images/patriot/attention.png" data-lightbox="image-1" data-title="Original implementation that searches Twitter in real-time and deducts points from users whose tweets it finds. This was later replaced with a consent based system.">
+                            <img src="images/patriot/slide_attention.png" /> </a>
+                    </li>
+                    <li id="first">
+                        <a class="item" href="images/patriot/6Consent.png" data-lightbox="image-1" data-title="Example of asking for consent. The bot adds users and their responses (or lack thereof) to a hashmap for future reference.">
+                            <img src="images/patriot/slide_consent.png" /> </a>
+                    </li>
+                    <li id="first">
+                        <a class="item" href="images/patriot/5Email.png" data-lightbox="image-1" data-title="Email from Twitter about original concept, illustrating the need to move to the consent system.">
+                            <img src="images/patriot/slide_email.png" /> </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="description">
+
+            </br></br></br></br>
+
+            <h5>DEVELOPMENT - BOT</h5>
+            The bot was developed using the Javascript, Node.js, and the Twitter API. I created it using Sublime text editor. Testing was done via print statements to the terminal window (thanks to a debugging boolean I created for easy testing), as well as an initial testing account on Twitter (before I had decided on the final bot name.)
+            </br></br>
+            The bot does a variety of actions: retweets patriotic tweets found by hashtag, tweets at users who post negative content (found by 3 constant streams including "democracy", "capitalism", and "#corrupt"), streams for replies detailing users' consent responses and adds them to a hashmap, tweets from a pre-made list of standalone tweets, and posts a sentiment-based daily update determined by the negative content streams.
+            </br></br>
+            The bot performs some of these actions every hour (except for the daily update) and chooses which specific actions to take based on a random integer. For example, every hour the bot has a 30% chance to tweet a pre-made message, and a 70% chance to retweet. The 3 streaming searches are always running in real-time, but each are only allowed to fire once per hour in order to avoid that function dominating the Twitter feed.
+            </br></br>
+
+            <img class="pic" src="images/patriot/sublime.png" style="margin-bottom: 20px;" />
+            <img class="pic" src="images/patriot/terminal.png" />
+
+            </br></br>
+
+
+
+            <h5>DEVELOPMENT - WEBSITE</h5>
+            The website was made using Weebly.com, so creation of it was fairly easy. The website is intended to be used by users who have encountered the bot and want to know what the Patriot Point program is.
+            </br></br>
+            The design of the site is based off of several existing inspirations. Modern government websites, such as heaelthcare.gov, served as the foundation. The FICO credit score site also influenced the layout and content, forming a reference for how to answer the most simple questions about the core of the system. Due to the capitalistic overtones of the rewards program, I also incorporated elements from rewards sites such as airline miles, credit card rewards, and Google local guide rewards.
+
+
+            </br></br>
+
+            <!-- <h4>Reflection</h4> -->
 
 
 
 
+            </br></br></br></br>
 
         </div>
 
     </div>
 
 
-
-
-
-    <!--<div class="col-sm-6 right">-->
-        <!--<div class="buttons" style="padding-top: 55px"></div>-->
-
-        <!--<div class="pictures">-->
-
-            <!--<a href="images/site/it2/index.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_index.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it2/portfolio.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_portfolio.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it2/item.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_item.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it2/about.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_about.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it2/process.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_process.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-
-
-            <!--<a href="images/site/it2/tit0.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_0.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it2/tit1.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_1.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it2/tit2.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it2/thumb_2.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-
-
-            <!--<a href="images/site/it1/index.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it1/thumb_index.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it1/portfolio.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it1/thumb_portfolio.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it1/item.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it1/thumb_item.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it1/about.png" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it1/thumb_about.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-
-            <!--<a href="images/site/it0/early.jpeg" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it0/thumb_early.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it0/earlyAbout.jpeg" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it0/thumb_about.png"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it0/earlyWire.jpeg" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it0/thumb_wire.jpg"/>-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a href="images/site/it0/earlyAboutWire.jpeg" data-lightbox="image-1">-->
-                <!--<div class="thumb">-->
-                    <!--<img class= "item_img" src= "images/site/it0/thumb_aboutwire.jpg"/>-->
-                <!--</div>-->
-            <!--</a>-->
-
-
-        <!--</div>-->
     </div>
 
     <script>
