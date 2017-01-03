@@ -9,7 +9,7 @@ body {
   padding: 0;
   background: #5B626D;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 16px;
 }
   body h1, h2, h3, h4, h5 {
     color: #ffffff;
@@ -232,7 +232,7 @@ body {
   }
     .container .right .buttons button {
       font-size: 16px;
-      margin: 0 10px 0 10px;
+      margin: 5px 10px 5px 10px;
       background-color: #394659;
       border: none;
     }
