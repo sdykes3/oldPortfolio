@@ -166,6 +166,7 @@ body {
 
 .slashes {
   margin-top: 15px;
+  visibility: hidden;
 }
 
 
@@ -385,6 +386,10 @@ textarea {
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
+  }
+  /* Show slashes when bigger than a mobile view */
+  .slashes {
+    visibility: visible;
   }
 
 }
