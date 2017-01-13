@@ -15,7 +15,7 @@ body {
     color: #ffffff;
   }
   body h5 {
-    padding-top: 15px;
+    padding-top: 10px;
   }
   body a {
     color: #202c3c;
@@ -262,8 +262,8 @@ body {
 .aboutPic {
   width: 85%;
   margin-left: 15%;
-  max-height: 600px;
-  max-width: 400px;
+  max-height: 540px;
+  max-width: 360px;
 }
 
 /* For email submission form */
